@@ -965,6 +965,10 @@ hr{
     padding-left: 20px;
 }
 
+hr{
+    color: white;
+}
+
 .footlt{
     text-align: center;
     padding: 10px;
