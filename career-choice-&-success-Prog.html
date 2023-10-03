@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        .header{
+        .headerccs{
             width: 100%;
             height: 550px;
             background-position: center;
@@ -16,6 +16,17 @@
             position: relative;
             display: block;
         }
+
+
+        .textccs{
+            font-size: 40px;
+            color: white;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+
+/*---------- the content -----------*/
 
         .ccsp{
             width: 80%;
@@ -31,8 +42,13 @@
             padding: 40px;
         }
 
+        .ccs1 h1{
+            margin-top: 10%;
+        }
+
         .ccs1 p{
             font-size: 20px;
+            text-align: justify;
         }
 
         .ccs-btn{
@@ -51,12 +67,21 @@
             color: white;
             transition: 1s;
         }
+
+        /*--------- type of service ----------*/
+
+        .ccs2{
+            display: flex;
+            gap: 40px;
+        }
+
+
     </style>
 
 </head>
 
 <body>
-    <div class="header">
+    <div class="headerccs">
         <nav id="navbar">
             <img src="Image/schoolway2.png" class="logo">
             <ul id="menu">
@@ -70,8 +95,8 @@
             </ul>
         </nav>
 
-        <div class="text-box">
-            <h1>Career and Education Orientation Programme</h1>
+        <div class="textccs">
+            <h1>Career and Education <br>Orientation Programme</h1>
         </div>   
     </div>
 
@@ -111,17 +136,27 @@
                 their education and different careers worldwide. To show them a world full of 
                 opportunities where their choice of career can and will prosper if things are 
                 done correctly.
-            </p><br>
+            </p><br><br>
                 <a href="CONTACT.html" class="ccs-btn">Contact Us to Learn More</a><br><br>
                 <a href="HOME.html" class="ccs-btn">Home</a>
         </div>
         <div class="ccs1">
-            <img src="Image/career.jpg" width="600" height="400"><br><br><br>
-            <h2>OUR OTHER ORIENTATION PROGRAMMES</h2><br>            
+            <img src="Image/career.jpg" width="600" height="400"><br><br>
+            <br><br><h1>ORDER THIS PROGRAMME</h1>
+            <div class="ccs2">
+                <div class="ccs3">
+                    <br><a href="paid-service.html" class="ccs-btn">PAID SERVICE</a><br><br>
+                </div>
+                <div class="ccs3">
+                    <br><a href="free-service.html" class="ccs-btn">FREE SERVICE</a><br><br>
+                </div>
+            </div>
+            <br><br><h1>OUR OTHER ORIENTATION PROGRAMMES</h1><br>            
             <a href="mind-detoxifying-Prog.html" class="ccs-btn">Mindset Detoxifying Orientation</a><br><br>
             <a href="how-to-learn-Prog.html" class="ccs-btn">How-to-Learn Orientation Programme</a><br><br>
             <a href="exam-prep-&-success-Prog.html" class="ccs-btn">Exam Preparation &amp; Success Orientation</a><br><br>
-            <a href="soft-skills-development-Prog.html" class="ccs-btn">Soft Skills &amp; Character Development Orientation</a>
+            <a href="soft-skills-development-Prog.html" class="ccs-btn">Soft Skills &amp; Character 
+                Development Orientation</a><br><br>  
         </div>        
     </div>
 </section>
