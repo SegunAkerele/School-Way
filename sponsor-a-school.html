@@ -5,10 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Way</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .headerspo{
+            width: 100%;
+            height: 550px;
+            background-position: center;
+            background-size: cover;
+            background-image: linear-gradient(rgba(4,6,30,0.7),rgba(4,6,30,0.7)),url(Image/capsup.jpg);
+            position: relative;
+            display: block;
+        }
+
+        .textspo{
+            font-size: 80px;
+            text-align: center;
+            padding-top: 15%;
+            color: white;
+        }
+    
+    /*---------- sponsor content ----------*/
+        .spo{
+            width: 60%;
+            margin: auto;
+            text-align: justify;
+            margin-top: 5%;
+        }
+
+        .spo h1{
+            font-size: 30px;
+            margin-top: 1%;
+            padding-bottom: 30px;
+            color: rgb(6, 6, 51);
+        }
+
+        .spo p{
+            font-size: 20px;
+            padding-bottom: 20px;
+        } 
+
+
+
+
+    /*--------- Contact form ---------*/
+        .cfspo{
+            width: 100%;
+            margin: auto;
+            max-width: 600px;
+            background: rgb(7, 7, 26);
+            margin-top: 3%;
+            padding: 30px 40px;
+            border-radius: 20PX;
+            text-align: center;
+            margin-bottom: 5%;
+        }
+
+        .cfspo1{
+            border: 2px solid white;
+            margin: 10px 0px;
+            padding: 6px 20px;
+            border-radius: 20px;
+        }
+
+        .cfspo h1{
+            font-weight: 500;
+            font-size: 30px;
+            margin-top: 0%;
+            color: white;
+        }
+
+        .cfspo1 label{
+            font-size: 15px;
+            color: white;
+            display: block;
+            text-align: left;
+        }
+
+        .cfspo1 input, .cfspo1 textarea{
+            width: 100%;
+            font-size: 15px;
+            margin-top: 5px;
+            border: none;
+            background: none;
+            outline: none;
+            color: white;
+        }
+
+        .cfspo1 option{
+            width: 100%;
+            font-size: 15px;
+        }
+
+        .cfspo1 select{
+            font-size: 15px;
+            display: block;
+            background: none;
+            border: none;
+            color: white;
+        }
+
+        .cfspo1 option{
+            background-color: orangered;
+        }
+
+        .buttonsv{
+            width: 30%;
+            background-color: transparent;
+            display: block;
+            padding: 14px 0px;
+            text-decoration: none;
+            font-size: 20px;
+            margin-top: 5px;
+            cursor: pointer;
+            color: white;
+            margin: auto;
+            border: 1px solid white;
+            border-radius: 30px;
+        }
+
+        .buttonsv:hover{
+            background-color: orangered;
+        }
+
+    
+    /*------------ btn ---------*/
+        .spo-btn{
+            border: 2px solid rgb(2, 2, 66);
+            text-decoration: none;
+            padding: 6px 12px;
+            background-color: transparent;
+            cursor: pointer;
+            color: orangered;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        .spo-btn:hover{
+            background-color: rgb(2, 2, 66);
+            color: white;
+            transition: 1s;
+        }
+
+        .spo2{
+            display: flex;
+            gap: 40px;
+            margin-left: 31%;
+            margin-bottom: 5%;
+        }
+
+
+    </style>
+
+
+
 </head>
 
 <body>
-    <div class="header">
+    <div class="headerspo">
         <nav id="navbar">
             <img src="Image/schoolway2.png" class="logo">
             <ul id="menu">
@@ -22,15 +175,129 @@
             </ul>
         </nav>
 
-        <div class="text-box">
-            <h1>-Welcome to School Way- <br> Your Ultimate Hub for Student Success</h1>
-            <p>Here you will get the necessary help, the guidance, the orientation,<br>
-                the empathy, the answer, the explanation, & the motivation you need to achieve quality<br> 
-                education that secures a sustainable future because we believe in schooling and<br>
-                education as the only sustainable way to achieve your life goals and dreams.</p>
-            <a href="" class="hero-btn">Connect With Us Today</a>
+        <div class="textspo">
+            <h1>Sponsor</h1>
         </div>   
     </div>
+
+<!---------- sponsor content ---------->
+<section>
+    <div class="spo">
+        <p>A good educational Samaritan is hard to come 
+            across these days. Thank you for being one of the few.
+        </p>
+        <h1>Our mission of detoxifying students' minds of erroneous thoughts about 
+            education, teaching them how to learn in and outside school to 
+            become gainful learners, and offering other learner advisory services 
+            is changing the narrative of low learning, low future aspiration, 
+            and school withdrawal among Nigerian students in low-income communities 
+            to better. Giving students access to this rare opportunity gives them 
+            an <em>unfair</em> advantage to be the best at school and in society.</h1>
+        <p><b>Kindly Note</b>: Our paid service is an onsite service, charged per 
+            programme. A programme contains at least three sessions along with a 
+            Q &amp; A session.</p>
+        <p>You will be required to pay 45% of the charges as an advanced payment 
+            after an agreement has been made. You can cancel your order up to 
+            a week before the scheduled date.
+        </p>
+        <h2>Fill out the form below to place your order.</h2>
+    </div>
+
+    <!-------- contact form ---------->
+    
+    <div class="cfspo">
+        <h1>Kindly Place Your Order</h1>
+        <div class="cfspo1">
+            <label>Full Name:</label>
+            <input type="text" name="" value="" placeholder="Enter Your Name">
+        </div>
+        <div class="cfspo1">
+            <label>Phone Number:</label>
+            <input type="number" name="" value="" placeholder="Enter Your Phone Contact">
+        </div>
+        <div class="cfspo1">
+            <label>Email:</label>
+            <input type="email" name="" value="" placeholder="Enter Your Email">
+        </div>
+        <div class="cfspo1">
+            <label>Name of the School:</label>
+            <input type="text" name="" value="" placeholder="Enter School Name:">
+        </div>
+        <div class="cfspo1">
+            <label>The School Address:</label>
+            <input type="text" name="" value="" placeholder="Enter the School Location:">
+        </div>
+        <div class="cfspo1">
+            <label>Who are you to the School?</label>
+            <select>
+                <option>A Well Wisher</option>
+                <option>The Principal</option>
+                <option>The Proprietor/Proprietress</option>
+                <option>The Vice Principal.</option>
+                <option>A Member of Parents' Forum</option>
+                <option>A Staff Member</option>
+                <option>A Student</option>
+            </select>
+        </div>
+        <div class="cfspo1">
+            <label>The Students' Class level:</label>
+            <select>
+                <option>JSS 1</option>
+                <option>JSS 2</option>
+                <option>JSS 3</option>
+                <option>All Junior Students</option>
+                <option>SS 1</option>
+                <option>SS 2</option>
+                <option>SS 3</option>
+                <option>All Senior Students</option>
+            </select>
+        </div>
+        <div class="cfspo1">
+            <label>Select a Programme:</label>
+            <select>
+                <option>How to Learn Orientation Programme</option>
+                <option>Mindset Detoxifying Orientation Programme (SENIOR STUDENTS)</option>
+                <option>Career and Education Orientation Programme</option>
+                <option>Exam Preparation and Success Orientation Programme</option>
+                <option>Soft Skills and Character Development Orientation Programme</option>
+            </select>
+        </div>
+        <div class="cfspo1">
+            <label>The Estimated Number of Students:</label>
+            <input type="number" name="" value="" placeholder="Enter the number of students:">
+        </div>
+        <div class="cfspo1">
+            <label>When do you want the programme held?</label>
+            <input type="date" name="" value="" placeholder="Enter your time schedule for the programme:">
+        </div>
+        <div class="cfspo1">
+            <label>Any Identified Challenge Among the Student?</label>
+            <select>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+        <div class="cfspo1">
+            <label>If yes, briefly Tell us about it:</label>
+            <textarea></textarea>
+        </div>
+        <a href="mailto:" class="buttonsv">SEND</a>
+    </div>
+</section>
+
+<!------------ btn ------------>
+
+<div class="spo2">
+    <div class="spo3">
+        <br><a href="PARTNERSHIP.html" class="spo-btn">Partner With Us</a><br><br>
+    </div>
+    <div class="spo3">
+        <br><a href="BOOKS.html" class="spo-btn">Patronize Our Books &amp; Games</a><br><br>
+    </div>
+    <div class="spo3">
+        <br><a href="HOME.html" class="spo-btn">Home</a><br><br>
+    </div>
+</div>
 
 
 <!------------- Call To Action ------->

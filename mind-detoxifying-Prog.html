@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        .header{
+        .headermdp{
             width: 100%;
             height: 550px;
             background-position: center;
@@ -15,6 +15,13 @@
             background-image: linear-gradient(rgba(4,6,30,0.7),rgba(4,6,30,0.7)),url(Image/capsup.jpg);
             position: relative;
             display: block;
+        }
+
+        .textmdp{
+            font-size: 40px;
+            color: white;
+            text-align: center;
+            padding-top: 15%;
         }
 
         .mdop{
@@ -33,10 +40,18 @@
 
         .mdp1 p{
             font-size: 20px;
+            text-align: justify;
         }
 
-        .mdp1 li{
+        .mdp1 ul li{
             font-size: 20px;
+            margin-left: 50px;
+            text-align: justify;
+        }
+
+        .mdp2{
+            display: flex;
+            gap: 50px;
         }
 
         .mdp-btn{
@@ -61,7 +76,7 @@
 
 <body>
 
-    <div class="header">
+    <div class="headermdp">
         <nav id="navbar">
             <img src="Image/schoolway2.png" class="logo">
             <ul id="menu">
@@ -75,8 +90,8 @@
             </ul>
         </nav>
 
-        <div class="text-box">
-            <h1>Mindset Detoxifying Orientation Programme</h1>
+        <div class="textmdp">
+            <h1>Mindset Detoxifying <br>Orientation Programme</h1>
         </div>   
     </div>
 
@@ -85,7 +100,16 @@
     <div class="mdp">
         <div class="mdp1">
             <img src="Image/science-1182713_1280.webp" width="600" height="400"><br><br><br>
-            <h2>OUR OTHER ORIENTATION PROGRAMMES</h2><br>            
+            <br><br><h1>ORDER THIS PROGRAMME</h1>
+            <div class="mdp2">
+                <div class="mdp3">
+                    <br><a href="paid-service.html" class="mdp-btn">PAID SERVICE</a><br><br>
+                </div>
+                <div class="mdp3">
+                    <br><a href="free-service.html" class="mdp-btn">FREE SERVICE</a><br><br>
+                </div>
+            </div><br>
+            <br><br><h2>OUR OTHER ORIENTATION PROGRAMMES</h2><br>            
             <a href="career-choice-&-success-Prog.html" class="mdp-btn">Career &amp; Education Orientation</a><br><br>
             <a href="how-to-learn-Prog.html" class="mdp-btn">How-to-Learn Orientation Programme</a><br><br>
             <a href="exam-prep-&-success-Prog.html" class="mdp-btn">Exam Preparation &amp; Success Orientation</a><br><br>

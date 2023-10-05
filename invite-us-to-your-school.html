@@ -5,10 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Way</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .headervite{
+            width: 100%;
+            height: 550px;
+            background-position: center;
+            background-size: cover;
+            background-image: linear-gradient(rgba(4,6,30,0.7),rgba(4,6,30,0.7)),url(Image/capsup.jpg);
+            position: relative;
+            display: block;
+        }
+
+        .textvite h1{
+            font-size: 80px;
+            text-align: center;
+            padding-top: 15%;
+            color: white;
+        }
+
+/*---------- invite content -----------*/
+        .invite{
+            width: 60%;
+            margin: auto;
+            margin-top: 5%;
+        }
+
+        .invite1 h1{
+            font-size: 40px;
+            color: rgb(7, 7, 51);
+            padding-bottom: 20px;
+        }
+
+        .invite1 p{
+            font-size: 20px;
+        }
+
+        .invite2{
+            display: flex;
+            gap: 50px;
+            margin-left: 30%;
+            margin-bottom: 20%;
+        }
+
+        .invite-btn{
+            border: 2px solid rgb(2, 2, 66);
+            text-decoration: none;
+            padding: 6px 12px;
+            background-color: transparent;
+            cursor: pointer;
+            color: rgb(2, 2, 66);
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        .invite-btn:hover{
+            background-color: rgb(2, 2, 66);
+            color: white;
+            transition: 1s;
+        }
+
+    </style>
 </head>
 
 <body>
-    <div class="header">
+    <div class="headervite">
         <nav id="navbar">
             <img src="Image/schoolway2.png" class="logo">
             <ul id="menu">
@@ -22,15 +83,30 @@
             </ul>
         </nav>
 
-        <div class="text-box">
-            <h1>-Welcome to School Way- <br> Your Ultimate Hub for Student Success</h1>
-            <p>Here you will get the necessary help, the guidance, the orientation,<br>
-                the empathy, the answer, the explanation, & the motivation you need to achieve quality<br> 
-                education that secures a sustainable future because we believe in schooling and<br>
-                education as the only sustainable way to achieve your life goals and dreams.</p>
-            <a href="" class="hero-btn">Connect With Us Today</a>
+        <div class="textvite">
+            <h1>We will like to be in your school</h1>
         </div>   
     </div>
+
+<!----------- Content ----------->
+
+<section class="invite">
+    <div class="invite1">
+        <h1>It gladdens our heart when we are called to serve.</h1>
+        <p>To have us in your school, kindly select the type of service you 
+            want and fill out the form. We will reach out to you as soon 
+            as possible.
+        </p>
+    </div><br><br>
+    <div class="invite2">
+        <div class="invite3">
+            <br><a href="paid-service.html" class="invite-btn">PAID SERVICE</a><br><br>
+        </div>
+        <div class="invite3">
+            <br><a href="free-service.html" class="invite-btn">FREE SERVICE</a><br><br>
+        </div>
+    </div>
+</section>
 
 
 <!------------- Call To Action ------->
