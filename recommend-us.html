@@ -5,10 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Way</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .headervite{
+            width: 100%;
+            height: 550px;
+            background-position: center;
+            background-size: cover;
+            background-image: linear-gradient(rgba(4,6,30,0.7),rgba(4,6,30,0.7)),url(Image/capsup.jpg);
+            position: relative;
+            display: block;
+        }
+
+        .textvite h1{
+            font-size: 80px;
+            text-align: center;
+            padding-top: 15%;
+            color: white;
+        }
+
+/*---------- invite content -----------*/
+        .rec{
+            width: 60%;
+            margin: auto;
+            margin-top: 5%;
+        }
+
+        .rec1 h1{
+            font-size: 40px;
+            color: rgb(7, 7, 51);
+            padding-bottom: 20px;
+        }
+
+        .rec1 p{
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .rec1 ul{
+            margin: 20px 5%;
+            font-size: 20px;
+        }
+
+        .rec2{
+            display: flex;
+            gap: 50px;
+            margin-left: 30%;
+            margin-bottom: 3%;
+        }
+
+        .rec-btn{
+            border: 2px solid rgb(2, 2, 66);
+            text-decoration: none;
+            padding: 6px 12px;
+            background-color: transparent;
+            cursor: pointer;
+            color: rgb(2, 2, 66);
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        .rec-btn:hover{
+            background-color: rgb(2, 2, 66);
+            color: white;
+            transition: 1s;
+        }
+
+    </style>
 </head>
 
 <body>
-    <div class="header">
+    <div class="headervite">
         <nav id="navbar">
             <img src="Image/schoolway2.png" class="logo">
             <ul id="menu">
@@ -18,19 +85,48 @@
                 <li ><a href="BOOKS.html">BOOKS & GAMES</a></li>
                 <li ><a href="PARTNERSHIP.html">PARTNER WITH US</a></li>
                 <li ><a href="BLOG.html">BLOG</a></li>
-                <li ><a href="CONTACT.html">CONTACT</a></li>
+                <li ><a href="donor-&-sponsor.html">SUPPORT US</a></li>
             </ul>
         </nav>
 
-        <div class="text-box">
-            <h1>-Welcome to School Way- <br> Your Ultimate Hub for Student Success</h1>
-            <p>Here you will get the necessary help, the guidance, the orientation,<br>
-                the empathy, the answer, the explanation, & the motivation you need to achieve quality<br> 
-                education that secures a sustainable future because we believe in schooling and<br>
-                education as the only sustainable way to achieve your life goals and dreams.</p>
-            <a href="" class="hero-btn">Connect With Us Today</a>
+        <div class="textvite">
+            <h1>We will like to be in your school</h1>
         </div>   
     </div>
+
+<!----------- Content ----------->
+
+<section class="rec">
+    <div class="rec1">
+        <h1>Thank you for being a proactive education stakeholder to 
+            recommend us for service.
+        </h1>
+        <p>Kindly note the following before bringing this your wonderful 
+            act of responsibility to our attention. Since we cannot simply 
+            define people’s choice of excellence.
+        </p>
+        <p>Therefore, we recommend you first do the following:
+            <ul>
+                <li>Discuss your plan with the school management team.</li>
+                <li>Ensure their readiness to have us in the school.</li>
+            </ul>
+        </p>
+        <p>If you have done so, kindly select the type of service you 
+            recommend us to the school and fill out the form.</p>
+    </div><br><br>
+    <div class="rec2">
+        <div class="rec3">
+            <br><a href="recommend-paid-service.html" class="rec-btn">PAID SERVICE</a><br><br>
+        </div>
+        <div class="rec3">
+            <br><a href="recommend-free-service.html" class="rec-btn">FREE SERVICE</a><br><br>
+        </div>
+    </div>
+    <div class="rec1">
+        <p>If you haven’t, we encourage you to do so and come back to 
+            inform us. We are always at your service.</p>
+    </div><br>
+</section>
 
 
 <!------------- Call To Action ------->

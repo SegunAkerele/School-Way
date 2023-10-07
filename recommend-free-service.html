@@ -7,46 +7,45 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        .headerspo{
+
+/*---------- header ----------*/
+        .headerrecfree{
+            height: 70vh;
             width: 100%;
-            height: 550px;
+            background-image: linear-gradient(rgba(4,6,30,0.7),rgba(4,6,30,0.7)),url(Image/Picture37.jpg);
             background-position: center;
             background-size: cover;
-            background-image: linear-gradient(rgba(4,6,30,0.7),rgba(4,6,30,0.7)),url(Image/capsup.jpg);
-            position: relative;
-            display: block;
+            text-align: center;
+            color: white;
+            margin-bottom: 5%;
         }
 
-        .textspo{
-            font-size: 80px;
-            text-align: center;
-            padding-top: 15%;
-            color: white;
-        }
-    
-    /*---------- sponsor content ----------*/
-        .spo{
+/*---------- content -----------*/
+        .recfree{
             width: 60%;
             margin: auto;
             text-align: justify;
-            margin-top: 5%;
         }
 
-        .spo h1{
+        .recfree1 h1{
             font-size: 30px;
             margin-top: 1%;
             padding-bottom: 30px;
             color: rgb(6, 6, 51);
         }
 
-        .spo p{
+        .recfree1 p{
             font-size: 20px;
             padding-bottom: 20px;
-        } 
+        }
+        
+        .recfree1 ul li{
+            font-size: 20px;
+            margin-left: 5%;
+        }
 
-
-    /*--------- Contact form ---------*/
-        .cfspo{
+/*--------- Contact form ---------*/
+        .cfsvref{
             width: 100%;
             margin: auto;
             max-width: 600px;
@@ -58,28 +57,28 @@
             margin-bottom: 5%;
         }
 
-        .cfspo1{
+        .cfsvref1{
             border: 2px solid white;
             margin: 10px 0px;
             padding: 6px 20px;
             border-radius: 20px;
         }
 
-        .cfspo h1{
+        .cfsvref h1{
             font-weight: 500;
             font-size: 30px;
             margin-top: 0%;
             color: white;
         }
 
-        .cfspo1 label{
+        .cfsvref1 label{
             font-size: 15px;
             color: white;
             display: block;
             text-align: left;
         }
 
-        .cfspo1 input, .cfspo1 textarea{
+        .cfsvref1 input, .cfsvref1 textarea{
             width: 100%;
             font-size: 15px;
             margin-top: 5px;
@@ -89,12 +88,12 @@
             color: white;
         }
 
-        .cfspo1 option{
+        .cfsvref1 option{
             width: 100%;
             font-size: 15px;
         }
 
-        .cfspo1 select{
+        .cfsvref1 select{
             font-size: 15px;
             display: block;
             background: none;
@@ -102,7 +101,7 @@
             color: white;
         }
 
-        .cfspo1 option{
+        .cfsvref1 option{
             background-color: orangered;
         }
 
@@ -125,9 +124,8 @@
             background-color: orangered;
         }
 
-    
-    /*------------ btn ---------*/
-        .spo-btn{
+        /*------------ btn ---------*/
+        .ccs-btn{
             border: 2px solid rgb(2, 2, 66);
             text-decoration: none;
             padding: 6px 12px;
@@ -138,13 +136,13 @@
             border-radius: 10px;
         }
 
-        .spo-btn:hover{
+        .ccs-btn:hover{
             background-color: rgb(2, 2, 66);
             color: white;
             transition: 1s;
         }
 
-        .spo2{
+        .ccs2{
             display: flex;
             gap: 40px;
             margin-left: 31%;
@@ -153,13 +151,10 @@
 
 
     </style>
-
-
-
 </head>
 
 <body>
-    <div class="headerspo">
+    <div class="headerrecfree">
         <nav id="navbar">
             <img src="Image/schoolway2.png" class="logo">
             <ul id="menu">
@@ -172,54 +167,50 @@
                 <li ><a href="donor-&-sponsor.html">SUPPORT US</a></li>
             </ul>
         </nav>
-
-        <div class="textspo">
-            <h1>Sponsor</h1>
-        </div>   
     </div>
 
-<!---------- sponsor content ---------->
-<section>
-    <div class="spo">
-        <h1>Thank you for being a good educational Samaritan. Together  
-            we can secure a sustainable future for an averange African child 
-            by giving them access to a rare opportunity that gives them 
-            an <em>unfair</em> advantage to be the best at school and in society.</h1>
-        <p><b>Kindly Note</b>: Our paid service is an onsite service, charged per 
-            programme. A programme contains at least three sessions along with a 
-            Q &amp; A session.</p>
-        <p>You will be required to pay 65% of the charges as an advanced payment 
-            after an agreement has been made. You can cancel your order up to 
-            a week before the scheduled date.
+<!------------- Content ------->
+<section class="recfree">
+    <div class="recfree1">
+        <h1>Thank you for being here. This is a thoughtful step leading to an impactful 
+            outcome.</h1>
+        <p>Since this is a recommendation, there are few things you should about our services
+            and few others we strongly encourage you do before communicating us. Therefore, 
+            note the following:
+            <ul>
+                <li>It is only available for schools in Nigeria</li>
+                <li>Our waitlist determines the date of the programme</li>
+                <li>The school can only enjoy our free service once</li>
+                <li>Discuss with the school management team.</li>
+                <li>Ensure their readiness to have us in the school.</li>
+            </ul>
         </p>
-        <h2>Fill out the form below to place your order.</h2>
+        <p></p>
+        <h2>If that is okay with you, complete the form below to tell us about this 
+            recommendation to be scheduled on our waitlist, or you can consider 
+            recommending our 
+            <a href="recommend-paid-service.html" style="color: orangered; font-size: 30px; 
+            text-decoration: none;">paid service</a> at an affordable price. 
+        </h2>
     </div>
 
     <!-------- contact form ---------->
     
-    <div class="cfspo">
+    <div class="cfsvref">
         <h1>Kindly Place Your Order</h1>
-        <div class="cfspo1">
+        <div class="cfsvref1">
             <label>Full Name:</label>
             <input type="text" name="" value="" placeholder="Enter Your Name">
         </div>
-        <div class="cfspo1">
+        <div class="cfsvref1">
             <label>Phone Number:</label>
             <input type="number" name="" value="" placeholder="Enter Your Phone Contact">
         </div>
-        <div class="cfspo1">
+        <div class="cfsvref1">
             <label>Email:</label>
             <input type="email" name="" value="" placeholder="Enter Your Email">
         </div>
-        <div class="cfspo1">
-            <label>Name of the School:</label>
-            <input type="text" name="" value="" placeholder="Enter School Name:">
-        </div>
-        <div class="cfspo1">
-            <label>The School Address:</label>
-            <input type="text" name="" value="" placeholder="Enter the School Location:">
-        </div>
-        <div class="cfspo1">
+        <div class="cfsvref1">
             <label>Who are you to the School?</label>
             <select>
                 <option>A Well Wisher</option>
@@ -231,7 +222,28 @@
                 <option>A Student</option>
             </select>
         </div>
-        <div class="cfspo1">
+        <div class="cfsvref1">
+            <label>Name of the School:</label>
+            <input type="text" name="" value="" placeholder="Enter School Name:">
+        </div>
+        <div class="cfsvref1">
+            <label>The School Address:</label>
+            <input type="text" name="" value="" placeholder="Enter the School Location:">
+        </div>
+        <div class="cfsvref1">
+            <label>Who Should We Contact in the School?</label>
+            <select>
+                <option>The Principal</option>
+                <option>The Proprietor/Proprietress</option>
+                <option>The Vice Principal.</option>
+                <option>A Staff Member</option>
+            </select>
+        </div>
+        <div class="cfsvref1">
+            <label>Phone Number:</label>
+            <input type="number" name="" value="" placeholder="Enter the Person's Phone Contact">
+        </div>
+        <div class="cfsvref1">
             <label>The Students' Class level:</label>
             <select>
                 <option>JSS 1</option>
@@ -244,7 +256,7 @@
                 <option>All Senior Students</option>
             </select>
         </div>
-        <div class="cfspo1">
+        <div class="cfsvref1">
             <label>Select a Programme:</label>
             <select>
                 <option>How to Learn Orientation Programme</option>
@@ -254,24 +266,27 @@
                 <option>Soft Skills and Character Development Orientation Programme</option>
             </select>
         </div>
-        <div class="cfspo1">
+        <div class="cfsvref1">
             <label>The Estimated Number of Students:</label>
             <input type="number" name="" value="" placeholder="Enter the number of students:">
         </div>
-        <div class="cfspo1">
-            <label>When do you want the programme held?</label>
-            <input type="date" name="" value="" placeholder="Enter your time schedule for the programme:">
-        </div>
-        <div class="cfspo1">
+        <div class="cfsvref1">
             <label>Any Identified Challenge Among the Student?</label>
             <select>
                 <option>Yes</option>
                 <option>No</option>
             </select>
         </div>
-        <div class="cfspo1">
+        <div class="cfsvref1">
             <label>If yes, briefly Tell us about it:</label>
             <textarea></textarea>
+        </div>
+        <div class="cfsvrpd1">
+            <label>Does the school know your are doing this?</label>
+            <select>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
         </div>
         <a href="mailto:" class="buttonsv">SEND</a>
     </div>
@@ -279,18 +294,17 @@
 
 <!------------ btn ------------>
 
-<div class="spo2">
-    <div class="spo3">
-        <br><a href="PARTNERSHIP.html" class="spo-btn">Partner With Us</a><br><br>
+<div class="ccs2">
+    <div class="ccs3">
+        <br><a href="PROGRAMMES.html" class="ccs-btn">More Programmes</a><br><br>
     </div>
-    <div class="spo3">
-        <br><a href="BOOKS.html" class="spo-btn">Patronize Our Books &amp; Games</a><br><br>
+    <div class="ccs3">
+        <br><a href="BOOKS.html" class="ccs-btn">Patronize Our Books &amp; Games</a><br><br>
     </div>
-    <div class="spo3">
-        <br><a href="HOME.html" class="spo-btn">Home</a><br><br>
+    <div class="ccs3">
+        <br><a href="HOME.html" class="ccs-btn">Home</a><br><br>
     </div>
 </div>
-
 
 <!------------- Call To Action ------->
 
