@@ -282,8 +282,8 @@ nav.sticky ul{
 /*------------- Section Partnership -----------*/
 .partnership{
     width: 100%;
-    height: 950px;
-    background-color: rgb(7, 7, 26);
+    height: 750px;
+    background-color:rgb(173, 173, 173);
     background-image: linear-gradient(rgba(4,6,30,0.7),rgba(4,6,30,0.7)), url(Image/withstudent.jpg);
     background-repeat: no-repeat;
     background-size: 40% 100%;
@@ -293,23 +293,21 @@ nav.sticky ul{
 .partnership1{
     width: 80%;
     margin: auto;
+    padding-top: 3%;
 }
 
 .partnership h1{
-    font-weight: 30px;
-    font-size: 30px;
-    color: white;
+    font-size: 50px;
+    color: rgba(2, 6, 43, 0.952);
     padding: 50px;
     text-align: left;
 }
 
 .partnership p{
-    font-weight: 30px;
-    font-size: larger;
-    color: white;
+    font-size: 25px;
+    color: orangered;
     padding: 0 50px;
     text-align: justify;
-    margin-bottom: 3%;
 }
 
 .row3{
@@ -318,12 +316,6 @@ nav.sticky ul{
     color: orangered;
     margin-bottom: 3%;
     padding: 15px 50px;
-}
-
-.row3a{
-    display: flex;
-    width: 60%;
-    justify-content: space-around;
 }
 
 .row3b{
@@ -391,7 +383,7 @@ nav.sticky ul{
     padding-top: 50px;
     text-align: center;
     background-color: rgb(7, 7, 26);
-    height: 450px;
+    height: 400px;
 }
 
 
@@ -423,14 +415,14 @@ nav.sticky ul{
     text-align: center;
     font-size: larger;
     padding: 20px;
-    height: 1147px;
+    height: 1080px;
     color: rgb(2, 2, 53);
 }
 
 .programmes p{
     margin-bottom: 2%;
     padding: 10px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .programmes h1{
@@ -442,7 +434,7 @@ nav.sticky ul{
 
 .programme1 h1{
     font-size: 40px;
-    color: rgb(2, 2, 53);
+    color: orangered;
 }
 
 .programme1 h1:hover{
@@ -474,22 +466,34 @@ nav.sticky ul{
 .hero-btn5{
     display: inline-block;
     text-decoration: none;
-    color: rgba(5, 9, 58, 0.87);
+    font-size: 20px;
+    color: orangered;
     border: 2px solid orangered;
     padding: 12px 34px;
     background: transparent;
     cursor: pointer;
-    margin-top: 5px;
     border-radius: 20px;
 }
 
 .hero-btn5:hover{
     background: orangered;
+    color: rgba(5, 9, 58, 0.87);
     transition: 1s;
 }
 
-.he3{
-    padding-right: 80px;
+.probas{
+    width: 80%;
+    margin: auto;
+}
+
+.probas{
+    display: flex;
+    justify-content: space-around;
+}
+
+.probas1:nth-child(2){
+    margin-right: 15%;
+    text-align: center;
 }
 
 
@@ -598,79 +602,60 @@ nav.sticky ul{
 
 /*---------- New Section Books ---------*/
 
-.books{
-    width: 100%;
-    margin: auto;
-    padding-top: 20px;
-    background-color: rgb(7, 7, 26);
-    height: 1150px;
-    padding-left: 50px;
-    text-align: center;
-}
-
-.row2{
+.book{
     width: 80%;
     margin: auto;
+    padding-top: 10%;
+    height: 850px;
+    padding-left: 50px;
+    text-align: center;
     display: flex;
+    margin-bottom: 3%;
 }
 
-.row2 img{
-    width: 100%;
+.book1 img{
+    width: 120%;
+    margin-left: 10%;
 }
 
 .books h1{
-    font-weight: 600;
-    font-size: 50px;
-    color: white;
+    font-size: 40px;
+    color: rgb(7, 7, 26);
     margin-top: 5%;
-    text-align: center;
+    text-align: left;
     margin-bottom: 3%;
+}
+
+.books p{
+    font-size: 20px;
+    color: orangered;
+    text-align: justify;
 }
 
 .book1{
-    width: 32%;
-    padding: 10px;
-    overflow: hidden;
-    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 5%;
     margin-bottom: 3%;
 }
 
-.layer{
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
+.book2{
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    margin-right: 10%;
 }
 
-.layer:hover{
-    background: rgba(4,6,30,0.7);
+.book2{
+    display: flex;
+    justify-content: space-around;
 }
 
-.layer h1{
-    width: 80%;
-    font-weight: 200;
-    color: white;
-    font-size: 20px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: relative;
-    opacity: 0;
-    margin-top: 100%;
-}
-
-.layer:hover h1{
-    bottom: 49%;
-    opacity: 1;
-}
 
 .b-btn{
     display: inline-block;
     text-decoration: none;
-    color: white;
+    color: rgb(7, 7, 26);
     border: 2px solid orangered;
     padding: 12px 34px;
     background: transparent;
@@ -681,7 +666,8 @@ nav.sticky ul{
 
 .b-btn:hover{
     border: 2px solid white;
-    background: orangered;
+    background: rgb(7, 7, 26);
+    color: white;
     transition: 1s;
 }
 
@@ -749,6 +735,7 @@ hr{
     padding: 20px;
     height: 700px;
     color: rgb(2, 2, 53);
+    margin-bottom: 3%;
 }
 
 .blogs h1{
@@ -791,7 +778,7 @@ hr{
     border-radius: 20px;
     cursor: pointer;
     margin-top: 5px;
-    margin-bottom: 2%;
+    margin-bottom: 20%;
 }
 
 .blog-btn:hover{
