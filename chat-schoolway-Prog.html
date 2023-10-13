@@ -5,10 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Way</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /*---------- header ----------*/
+        .headersub{
+            height: 70vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4,6,30,0.7)
+            ,rgba(4,6,30,0.7)),url(Image/the\ school-w.jpg);
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            color: white;
+        }
+
+        /*--------- content ---------*/
+        .sub{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        .sub1{
+            width: 50%;
+            margin: auto;
+        }
+
+        .sub h1{
+            font-size: 50px;
+            margin-bottom: 10%;
+            color: rgb(12, 12, 44);
+        }
+
+        .sub p{
+            font-size: 25px;
+            margin-bottom: 40px;
+            padding-right: 50px;
+            text-align: justify;
+        }
+
+        .sub p a{
+            font-size: 20px;
+        }
+
+        .sub1:nth-child(1){
+            width: 50%;
+        }
+
+        .invitesub{
+            text-decoration: none;
+            color: rgb(2, 2, 53);
+            border: 2px solid rgb(2, 2, 53);
+            padding: 12px 34px;
+            background: orangered;
+            cursor: pointer;
+            top: 80%;
+            left: 45%;
+            border-radius: 20px;
+
+        }
+
+        .invitesub:hover{
+            color: orangered;
+            background: transparent;
+            transition: 1s;
+        }
+
+
+        /*--------- Contact form ---------*/
+        .cfsub{
+            width: 100%;
+            margin: auto;
+            max-width: 600px;
+            background: rgb(7, 7, 26);
+            margin-top: 30%;
+            padding: 30px 40px;
+            text-align: center;
+            margin-bottom: 5%;
+        }
+
+        .cfsub1{
+            border: 2px solid white;
+            margin: 10px 0px;
+            padding: 6px 20px;
+        }
+
+        .cfsub h1{
+            font-weight: 500;
+            font-size: 30px;
+            margin-top: 0%;
+            color: white;
+        }
+
+        .cfsub1 label{
+            font-size: 15px;
+            color: white;
+            display: block;
+            text-align: left;
+        }
+
+        .cfsub1 input{
+            width: 100%;
+            font-size: 20px;
+            margin-top: 5px;
+            border: none;
+            background: none;
+            outline: none;
+            color: white;
+        }
+
+        .buttonsub{
+            width: 50%;
+            background-color: transparent;
+            display: block;
+            padding: 14px 0px;
+            text-decoration: none;
+            font-size: 20px;
+            margin-top: 5px;
+            cursor: pointer;
+            color: white;
+            margin: auto;
+            border: 1px solid orangered;
+        }
+
+        .buttonsub:hover{
+            background-color: white;
+            transition: 2s;
+            color: rgb(12, 12, 44);
+        }
+
+
+    </style>
 </head>
 
 <body>
-    <div class="header">
+    <div class="headersub">
         <nav id="navbar">
             <img src="Image/schoolway2.png" class="logo">
             <ul id="menu">
@@ -21,16 +154,49 @@
                 <li ><a href="donor-&-sponsor.html">SUPPORT US</a></li>
             </ul>
         </nav>
-
-        <div class="text-box">
-            <h1>-Welcome to School Way- <br> Your Ultimate Hub for Student Success</h1>
-            <p>Here you will get the necessary help, the guidance, the orientation,<br>
-                the empathy, the answer, the explanation, & the motivation you need to achieve quality<br> 
-                education that secures a sustainable future because we believe in schooling and<br>
-                education as the only sustainable way to achieve your life goals and dreams.</p>
-            <a href="" class="hero-btn">Connect With Us Today</a>
-        </div>   
     </div>
+
+<!--------- subscription section -------->
+<section class="sub">
+    <div class="sub1">
+        <h1>Subscribe to chat the <span style="color: orangered;">SCHOOL WAY</span></h1>
+        <p><b>The world is not meant to be lived alone; 
+            school is not meant to be attended without a reliable 
+            guide.</b>
+        </p>
+        <p>Make an intelligent decision to subscribe to 
+            our free online chat. Bring your controversial questions, 
+            confusions, and views about schooling, education, 
+            career-choice, etc. for thoughtful and plausible 
+            explanations. With the <span style="color: orangered;">School Way</span>, 
+            attaining a sustainable future through education becomes easier.
+        </p>
+        <p>If you are a parent or a school owner, giving your 
+            child or students access to this rare opportunity 
+            will give them an unfair advantage in school & society.
+        </p>
+        <p><a href="invite-us-to-your-school.html" class="invitesub">Invite Us To Your School</a></p>
+    
+    </div>
+    <div class="sub1">    
+        <div class="cfsub">
+            <h1>Fill this to Subscribe</h1>
+            <div class="cfsub1">
+                <label>Full Name:</label>
+                <input type="text" name="" value="" placeholder="Enter Your Name">
+            </div>
+            <div class="cfsub1">
+                <label>Phone Number:</label>
+                <input type="number" name="" value="" placeholder="Enter Your Phone Contact">
+            </div>
+            <div class="cfsub1">
+                <label>Email:</label>
+                <input type="email" name="" value="" placeholder="Enter Your Email">
+            </div>
+            <a href="mailto:" class="buttonsub">Subscribe</a>
+        </div>
+    </div>
+</section>
 
 
 <!------------- Call To Action ------->
