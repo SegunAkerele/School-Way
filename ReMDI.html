@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        .header{
+        .headerremdi{
             width: 100%;
             height: 550px;
             background-position: center;
@@ -17,35 +17,87 @@
             display: block;
         }
 
+        .remditxt h1{
+            font-size: 100px;
+            padding-top: 15%;
+            text-align: center;
+            color: white;
+        }
+
         .remdip{
             width: 80%;
             margin: auto;
             margin-top: 5%;
-        }
-
-        .remdi{
+            margin-bottom: 5%;
             display: flex;
         }
 
+        .remdi1 h1{
+            font-size: 35px;
+            margin-top: 20px;
+            color: rgb(6, 6, 59);
+        }
+
         .remdi1{
-            padding: 40px;
+            width: 50%;
         }
 
-        .remdi1 p{
-            font-size: 20px;
+
+        .remdi1:nth-child(1){
+            width: 50%;
         }
 
-        .selet{
-            background-color: orangered;
-            font-size: 20px;
+        .bk{
+            margin: 20% 20% 0 20%;
+        }
+
+        .remdi1:nth-child(1) h2{
+            font-size: 50px;
             text-align: center;
-            border: 2px solid rgb(2, 2, 66);
-            padding: 10px;
-            cursor: pointer;
+            color: rgb(6, 6, 59);
         }
 
-        .selet:hover{
-            background-color: white;
+        .remdi1:nth-child(1) a{
+            text-decoration: none;
+        }
+
+        .remdi1:nth-child(1) p{
+            text-align: center;
+            font-size: 20px;
+            padding: 0 70px;
+        }
+
+        .remdi1:nth-child(1) h3{
+            text-align: justify;
+            font-size: 25px;
+            color: rgb(6, 6, 59);
+            padding: 20px 40px;
+        }
+
+        .rembtn{
+            display: flex;
+        }
+
+        .remdi1:nth-child(2) p{
+            font-size: 20px;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        .remdi1:nth-child(2) ul{
+            padding-left: 80px;
+        }
+
+        .remdi1:nth-child(2) li{
+            padding-left: 10px;
+            font-size: 20px;
+        }
+
+        .remdi1:nth-child(2) h2{
+            padding: 10px;
+            margin-bottom: 5%;
+            text-align: justify;
+            color: rgb(6, 6, 59);
         }
 
         .ssc-btn{
@@ -64,12 +116,16 @@
             color: orangered;
             transition: 1s;
         }
-    </style>
 
+        .ssbtn{
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="header">
+    <div class="headerremdi">
         <nav id="navbar">
             <img src="Image/schoolway2.png" class="logo">
             <ul id="menu">
@@ -83,39 +139,134 @@
             </ul>
         </nav>
         
-        <div class="text-box">
-            <h1>Responsibility Mindset Development Initiative</h1>
+        <div class="remditxt">
+            <h1>Responsibility Mindset <br>Development Initiative</h1>
         </div>   
     </div>
 
 <!-------- Content -------------->
 <section class="remdip">
-    <div class="remdi">
-        <div class="remdi1">
-            <img src="Image/sorem.jpg" width="600" height="400"><br><br><br>
-            <h3>OUR ORIENTATION PROGRAMMES HERE</h3>
+    <div class="remdi1">
+        <img src="Image/schoolwayclub.jpg" width="600" height="400"><br><br><br>
+        <br><br><h1>OUR ORIENTATION PROGRAMMES</h1><br>
+        <br><a href="career-choice-&-success-Prog.html" class="ssc-btn">Career &amp; Education Orientation</a><br><br>            
+        <br><a href="mind-detoxifying-Prog.html" class="ssc-btn">Mindset Detoxifying Orientation</a><br><br>
+        <br><a href="how-to-learn-Prog.html" class="ssc-btn">How-to-Learn Orientation Programme</a><br><br>
+        <br><a href="exam-prep-&-success-Prog.html" class="ssc-btn">Exam Preparation &amp; Success Orientation</a><br><br>
+        <br><a href="soft-skills-development-Prog.html" class="ssc-btn">Soft Skills &amp; Character 
+            Development Orientation</a><br><br>
+        <img src="Image/undergraduate.jpg" class="bk" width="60%">
+        <a href="" class="bkbtn"><h2>The Radical RoadMap <br>for Undergraduates</h2></a>
+        <p>How to acquire knowledge, develop soft skills, &amp; gather 
+            experiences on campus for the best post-graduation experience 
+            and life.
+        </p>
+        <h3>A must-have companion for every undergraduate who wants to excel 
+            academically and develop their full potential on campus to become 
+            a successful job creator or the best option for their desired 
+            job positions in society.
+        </h3>
+        <div class="rembtn">
+            <p><a href="" class="ssc-btn">More on this Book</a></p>
+            <p><a href="BOOKS.html" class="ssc-btn">More Books</a></p>
         </div>
-        <div class="remdi1">
-            <p>This is a School Way's school-based club with the aim of working with students to
-                enable them develop a sense of responsibility towards their education and personal
-                growth and the development of their community while guiding them to develop the 
-                21st century skills.<br><br>
-
-                It is a platform where students are intentionally engaged to develop skills through
-                active participation in community development activities and involvement in
-                enlightening discussions on personal and community development.<br><br>
-
-                Our focus through this initiative is to keep students aware that it is their
-                responsibility, having had an access to school, to ensure they acquire knowledge 
-                and develop skills that will enable them to be useful for themselves and their 
-                communities in the future.
-
-                Students develop skills such as problem-awareness, problem-solving, critical thinking,
-                creativity, collaboration, and leadership skills through this initiative.<br><br>
-            <a href="CONTACT.html" class="ssc-btn">Contact Us to Learn More</a><br><br>
-            <a href="HOME.html" class="ssc-btn">Home</a>
-        </div>        
     </div>
+    <div class="remdi1">
+        <h1>Why this Inintiative?</h1>
+        <p>The leadership problem in Nigeria is little about competency but more about 
+            being and feeling responsible. Most African leaders hardly feel they are in 
+            their positions for their people, communities, and countries. But if we ask 
+            ourselves why most African leaders lack a sense of responsibility, we can 
+            always trance the causes to their childhood.
+        </p>
+        <p>One thing history has taught us about leaders is that no one can stop a 
+            potential young leader from becoming a leader in their future circles. 
+            Nothing else aside from death – not poverty or ignorance or illiteracy. The 
+            worst is that they will become irresponsible leaders who fail at school, 
+            in relationships, in careers, and leadership positions.
+        </p>
+        <p>Learning to be irresponsible is very subtle that it is so rampant amongst 
+            students today without knowing it. Evidence of irresponsibility among 
+            students today includes avoiding copying notes, not studying to write tests 
+            or exams, waiting for another person to do something, feeling punished when 
+            asked to do something, etc. These are acts of irresponsibility in the 
+            making. Such children will grow up to become irresponsible leaders.
+        </p>
+        <p>A sense of responsibility is not a virtue that can easily be inculcated 
+            overnight, especially by adults. An adult who did not grow up taking 
+            selfless responsible actions as a child or teenager would hardly take a step 
+            towards solving common problems as a community leader. That is why children 
+            in school must be intentionally equipped with the right mindset of being 
+            responsible leaders in their communities and environments since mere being 
+            in school is no longer enough to help children grow appropriately into 
+            responsible adults.
+        </p>
+        <p>Complementing school’s effort in that regard is the main essence of ReMDI.</p>
+
+        <h1>The Initiative</h1>
+        <p>Responsibility Mindset Development Initiative (ReMDI) is a project-based 
+            learning platform where students are engaged to develop skills and a sense 
+            of responsibility toward their personal growth, their families, and the 
+            development of their communities.
+        </p>
+        <p>In schools, ReMDI is established as a School Club for students, functioning 
+            as a learning hub where the members are engaged in discussions on how to 
+            attain academic excellence, develop soft and leadership skills as well as 
+            a positive character, are encouraged to dream big, are provided with 
+            leadership books, playing educative games, such as Legacy that helps them 
+            envision a future with or without adequate knowledge acquisition, and 
+            participate in voluntary social activities of the club within the school 
+            compound through which they develop leadership and other soft skills.
+        </p>
+        <p>The objectives of the initiative are to:
+            <ul>
+                <li>Guide students into becoming responsible adults;</li>
+                <li>Prepare students to become influential positive impact makers in 
+                    their communities;</li>
+                <li>Motivate students towards intensive knowledge acquisition and 
+                    self-development;</li>
+                <li>Encourage students to make better career choices, among many others.</li>
+                <li>Guide students to develop essential soft and leadership skills 
+                    necessary to achieve their big dreams as responsible young people.</li>
+            </ul>
+        </p>
+        <p>We want to see young people who will genuinely take responsibility for 
+            Self-development and positive growth for the well-being of their families 
+            and the development of their communities.
+        </p>
+        <p>The initiative accommodates both male and female students of secondary 
+            schools as members of the club without discrimination in any form. Its 
+            membership is open to all the students of the host school.
+        </p>
+        <p>However, the initiative's members are grouped into full and participating 
+            members. A participating member is every interested student of the host 
+            school. In contrast, full members are a few elected students among the 
+            interested students in particular positions of responsibility in the 
+            club. These selected students will act as the coordinators of the club’s 
+            activities under the supervision of whomever the school chooses as the 
+            director of the club among the teachers. They are the initiative’s 
+            ambassadors who plan the club’s weekly activities and see to its 
+            growth.
+        </p>
+        <p>To become a full member of the initiative, such a student must be a 
+            committed and active club member who attains distinction in English 
+            Studies, Mathematics, or Basic Science and must earn credit in at least 
+            nine other subjects.
+        </p>
+        <p>The club's Facilitators’ Manual is prepared to help effectively facilitate 
+            the club’s activities.
+        </p>
+        <h2>Our focus is to instill in students a sense of responsibility towards 
+            self and community development while also developing leadership skills. 
+            Our effort is to see our members become citizens who respond to issues 
+            affecting people and their communities in the future.
+        </h2>
+        <div class="ssbtn">
+            <a href="CONTACT.html" class="ssc-btn">Contact Us to Learn More</a>
+            <a href="PARTNERSHIP.html" class="ssc-btn">Partner with Us</a>
+            <a href="HOME.html" class="ssc-btn">Home</a>
+        </div>
+    </div>        
 </section>
 
 <!------------- Call To Action ------->

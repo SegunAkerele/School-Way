@@ -59,20 +59,9 @@ nav ul li:hover::after{
     padding: 20px 8%;
 }
 
-nav.sticky{
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: block;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
+#navbar{
+    position:fixed;
 }
-
-nav.sticky ul{
-    width: 100%;
-}
-
 
 /*---------- header ----------*/
 .header{
