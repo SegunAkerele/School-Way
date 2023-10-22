@@ -67,7 +67,8 @@ nav ul li:hover::after{
 .header{
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,6,30,0.7),rgba(4,6,30,0.7)),url(Image/Picture37.jpg);
+    background-image: linear-gradient(rgba(4,6,30,0.7)
+    ,rgba(4,6,30,0.7)),url(Image/Picture37.jpg);
     background-position: center;
     background-size: cover;
     text-align: left;
@@ -84,7 +85,6 @@ nav ul li:hover::after{
 
 .hdabtn{
     padding: 15px;
-    margin-left: 150px;
     display: flex;
     justify-content: space-around;
 }

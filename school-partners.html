@@ -10,22 +10,22 @@
 
 <style>
     .sub-headersp{
-        height: 550px;
+        height: 70vh;
         width: 100%;
-        background-image: linear-gradient(rgba(4,6,30,0.7),rgba(4,6,30,0.7)),url(Image/Picture5.jpg);
+        background-image: linear-gradient(rgba(4,6,30,0.7)
+        ,rgba(4,6,30,0.7)),url(Image/Picture5.jpg);
         background-position: center;
         background-size: cover;
         text-align: left;
         color: white;
     }
     
-    .sub-headersp h1{
-        font-size: 100px;
-        font-weight: 30px;
-        padding-top: 12%;
-        padding-right: 200px;
-        margin-bottom: 10px;
+    .optxt{
+        font-size: 50px;
+        color: white;
         text-align: right;
+        padding-top: 15%;
+        margin-right: 10%;
     }
     
     
@@ -110,7 +110,7 @@
 
 /*--------- orgpt hd ----------*/
     .orgpt{
-    width: 70%;
+    width: 60%;
     margin: auto;
 }
 
@@ -128,7 +128,7 @@
 
     
 /*--------- Contact form ---------*/
-    .cfsv{
+    .cfop{
         width: 80%;
         margin: auto;
         max-width: 600px;
@@ -140,28 +140,28 @@
         margin-bottom: 5%;
     }
     
-    .cfsv1{
+    .cfop1{
         border: 2px solid white;
         margin: 10px 0px;
         padding: 6px 20px;
         border-radius: 20px;
     }
     
-    .cfsv h1{
+    .cfop h1{
         font-weight: 500;
         font-size: 30px;
         margin-top: 0%;
         color: white;
     }
     
-    .cfsv1 label{
+    .cfop1 label{
         font-size: 15px;
         color: white;
         display: block;
         text-align: left;
     }
     
-    .cfsv1 input, .cfsv1 textarea{
+    .cfop1 input, .cfop1 textarea{
         width: 100%;
         font-size: 20px;
         margin-top: 5px;
@@ -171,7 +171,7 @@
         color: white;
     }
     
-    .buttonsv{
+    .buttonop{
         width: 30%;
         background-color: transparent;
         display: block;
@@ -186,8 +186,9 @@
         border-radius: 30px;
     }
     
-    .buttonsv:hover{
+    .buttonop:hover{
         background-color: orangered;
+        transition: 2s;
     }
     
     /*----------- contact ---------*/
@@ -230,7 +231,9 @@
                 <li ><a href="donor-&-sponsor.html">SUPPORT US</a></li>
             </ul>
         </nav>
-        <h1><em>Organisation Partner</em></h1><br>
+        <div class="optxt">
+            <h1><em>Organisation Partner</em></h1><br>
+        </div>
     </div>
 
 <!--------- orgp section ----------->
@@ -271,7 +274,7 @@
     </div>
     <div class="orgpt1">
         <h1>The Kind of Organisation We Partner</h1>
-        <p>We partner organisations that directly or indirectly engages young 
+        <p>We partner organisations that directly or indirectly engage young 
             people such as secondary school students and 
             undergraduates. Such an organisation include secondary schools,
             universities, coaching centres, religious organisations, and the likes.
@@ -279,7 +282,7 @@
     </div>
     <div class="orgpt1">
         <h1>Partners' Benefits</h1>
-        <p>As our partner, your organisation or those your recommend enjoy 
+        <p>As our partner, your organisation or those you recommend enjoy 
             some of our services free of charge.
         </p>
     </div><br><br>
@@ -287,7 +290,37 @@
     <h3>Please kindly fill in the form below to indicate your interest.</h3>
 </section>
 
-<!---------- Welcome Section ---------->
+<!-------- contact form ---------->
+    
+<div class="cfop">
+    <h1>Contact Us for Organisation Partnership</h1>
+    <div class="cfop1">
+        <label>Full Name:</label>
+        <input type="text" name="" value="" placeholder="Enter Your Name">
+    </div>
+    <div class="cfop1">
+        <label>Phone Number:</label>
+        <input type="number" name="" value="" placeholder="Enter Your Phone Contact">
+    </div>
+    <div class="cfop1">
+        <label>Email:</label>
+        <input type="email" name="" value="" placeholder="Enter Your Email">
+    </div>
+    <div class="cfop1">
+        <label>Organisation:</label>
+        <input type="text" name="" value="" placeholder="Enter Your The Name of Your Organisation:">
+    </div>
+    <div class="cfop1">
+        <label>Location:</label>
+        <input type="text" name="" value="" placeholder="Enter Your Location: State &amp; Town">
+    </div>
+    <div class="cfop1">
+        <label>Message:</label>
+        <textarea></textarea>
+    </div>
+    <a href="mailto:" class="buttonop">SEND</a>
+</div>
+
 
     
 
@@ -336,7 +369,7 @@
                         <a href="">Sponsor a School</a><br>
                         <a href="">Invite Us to Your School</a><br>
                         <a href="">Volunteer</a><br>
-                        <a href="">Blog</a><br>
+                        <a href="">Contact</a><br>
                     </p>
         </div>
         <div class="footer-col">
