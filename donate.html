@@ -5,46 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Way</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+    /*---------- header ----------*/
+        .headerdonate{
+            height: 70vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4,6,30,0.7)
+            ,rgba(4,6,30,0.7)),url(Image/Picture1.png);
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            color: white;
+        }
+
+        .headerdonate h1{
+            font-size: 80px;
+            width: 60%;
+        }
+
+    /*--------- Contact boxes, texts ---------*/
+   </style>        
 </head>
 
 <body>
-    <div class="header">
-        <nav id="navbar">
-            <img src="Image/schoolway2.png" class="logo">
-            <ul id="menu">
-                <li ><a href="HOME.html">HOME</a></li>
-                <li ><a href="ABOUTUS.html">ABOUT US</a></li>
-                <li ><a href="PROGRAMMES.html">OUR PROGRAMMES</a></li>
-                <li ><a href="BOOKS.html">BOOKS & GAMES</a></li>
-                <li ><a href="PARTNERSHIP.html">PARTNER WITH US</a></li>
-                <li ><a href="BLOG.html">BLOG</a></li>
-                <li ><a href="donor-&-sponsor.html">SUPPORT US</a></li>
-            </ul>
+    <section class="headerdonate">
+        <nav>
+            <a href="HOME.html"><img src="Image/schoolway2.png"></a>
+            <div class="nav-link" id="navLink">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul id="menu">
+                        <li ><a href="HOME.html">HOME</a></li>
+                        <li ><a href="ABOUTUS.html">ABOUT US</a></li>
+                        <li ><a href="PROGRAMMES.html">OUR PROGRAMMES</a></li>
+                        <li ><a href="BOOKS.html">BOOKS & GAMES</a></li>
+                        <li ><a href="PARTNERSHIP.html">PARTNER WITH US</a></li>
+                        <li ><a href="BLOG.html">BLOG</a></li>
+                        <li ><a href="donor-&-sponsor.html">SUPPORT US</a></li>
+                    </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-
-        <div class="text-box">
-            <h1>-Welcome to School Way- <br> Your Ultimate Hub for Student Success</h1>
-            <p>Here you will get the necessary help, the guidance, the orientation,<br>
-                the empathy, the answer, the explanation, & the motivation you need to achieve quality<br> 
-                education that secures a sustainable future because we believe in schooling and<br>
-                education as the only sustainable way to achieve your life goals and dreams.</p>
-            <a href="" class="hero-btn">Connect With Us Today</a>
-        </div>   
-    </div>
+        <div class="headertxt">
+            <h1><em>Your donation is put into a good use.</em></h1>
+        </div>
+    </section>
 
 
 <!------------- Call To Action ------->
-
 <section class="cta">
     <h1>New Resources in Your Inbox</h1>
-    <p>An Update From School Way</p>
+    <p>Get Updates From <span style="color: orangered;">School Way</span></p>
     <div class="cta1">
         <label>Email:</label>
         <input type="email" name="" value="" placeholder="Enter Your Email">
     </div><br>
-    <a href="mailto:" class="Button">SEND</a>
+    <a href="mailto:" class="Button">Submit</a>
 </section>
-
 
 <!------------- Footer ------->
 
@@ -72,15 +89,15 @@
         <div class="footer-col">
                 <h2>Company</h2>
                     <p>
-                        <a href="">About Us</a><br>
-                        <a href="">Programmes</a><br>
-                        <a href="">Books &amp; Games</a><br>
-                        <a href="">Our Team</a><br>
-                        <a href="">Partner with Us</a><br>
-                        <a href="">Sponsor a School</a><br>
-                        <a href="">Invite Us to Your School</a><br>
-                        <a href="">Work &amp; Earn</a><br>
-                        <a href="">Contact</a><br>
+                        <a href="ABOUTUS.html">About Us</a><br>
+                        <a href="PROGRAMMES.html">Programmes</a><br>
+                        <a href="BOOKS.html">Books &amp; Games</a><br>
+                        <a href="Team.html">Our Team</a><br>
+                        <a href="PARTNERSHIP.html">Partner with Us</a><br>
+                        <a href="sponsor-a-school.html">Sponsor a School</a><br>
+                        <a href="invite-us-to-your-school.html">Invite Us to Your School</a><br>
+                        <a href="VOLUNTEER.html">Volunteer</a><br>
+                        <a href="CONTACT.html">Contact</a><br>
                     </p>
         </div>
         <div class="footer-col">
@@ -93,14 +110,10 @@
                     </p>
         </div>
     </div>
-    <hr><br>
-    <p class="footlt">&copy;2023 School Way. All Right Reversed.</p>
+    <hr>
+    <p class="footlt">&copy;2023 School Way. All Right Reversed.</p><br>
     </section>
 </footer>
-
-
-
-
 
 
 
