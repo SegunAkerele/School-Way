@@ -20,12 +20,12 @@
             font-size: 80px;
             width: 60%;
         }
-    
+
     /*---------- sponsor content ----------*/
         .spo{
-            width: 60%;
+            width: 70%;
             margin: auto;
-            text-align: justify;
+            text-align: left;
             margin-top: 5%;
         }
 
@@ -41,7 +41,26 @@
             padding-bottom: 20px;
         } 
 
+        @media (max-width: 700px) {
+            .headerspons h1{
+                font-size: 30px;
+            }
+            
+            .spo{
+                width: 80%;
+                margin: auto;
+                margin-top: 10%;
+            }
 
+            .spo h1{
+                font-size: 25px;
+            }
+
+            .spo p{
+                font-size: 15px;
+            }
+        }
+    
     /*--------- Contact form ---------*/
         .cfspo{
             width: 100%;
@@ -59,7 +78,7 @@
             border: 2px solid white;
             margin: 10px 0px;
             padding: 6px 20px;
-            border-radius: 20px;
+            border-radius: 10px;
         }
 
         .cfspo h1{
@@ -122,6 +141,15 @@
             background-color: orangered;
         }
 
+        @media (max-width: 700px) {
+            .cfspo{
+            width: 80%;
+            padding: 20px 30px;
+            border-radius: 0PX;
+        }
+            
+        }
+
     
     /*------------ btn ---------*/
         .spo-btn{
@@ -144,15 +172,31 @@
         .spo2{
             display: flex;
             gap: 40px;
-            margin-left: 31%;
+            margin-left: 22%;
             margin-bottom: 5%;
         }
 
+        @media (max-width: 700px) {
+            .spo2{
+                width: 80%;
+                margin: auto;
+                flex-direction: column;
+                gap: 1px;
+            }
+            
+            .spo-btn{
+                border: 2px solid rgb(2, 2, 66);
+                text-decoration: none;
+                padding: 6px 12px;
+                background-color: transparent;
+                cursor: pointer;
+                color: orangered;
+                font-size: 15px;
+                border-radius: 10px;
+            }
+        }
 
     </style>
-
-
-
 </head>
 
 <body>
@@ -164,9 +208,9 @@
                     <ul id="menu">
                         <li ><a href="HOME.html">HOME</a></li>
                         <li ><a href="ABOUTUS.html">ABOUT US</a></li>
-                        <li ><a href="PROGRAMMES.html">OUR PROGRAMMES</a></li>
+                        <li ><a href="PROGRAMMES.html">PROGRAMMES</a></li>
                         <li ><a href="BOOKS.html">BOOKS & GAMES</a></li>
-                        <li ><a href="PARTNERSHIP.html">PARTNER WITH US</a></li>
+                        <li ><a href="PARTNERSHIP.html">PARTNERSHIP</a></li>
                         <li ><a href="BLOG.html">BLOG</a></li>
                         <li ><a href="donor-&-sponsor.html">SUPPORT US</a></li>
                     </ul>

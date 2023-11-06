@@ -24,26 +24,22 @@
     font-size: 80px;
     width: 60%;
 }
-
+@media (max-width: 700px) {
+    .headerbook h1{
+        font-size: 30px;
+    } 
+}
 /*--------- HD content ----------*/
 
 .buk{
     width: 70%;
-    text-align: center;
+    text-align: left;
     margin: auto;
     padding-top: 50px;
 }
 
-#bookset1{
-    display:grid;
-    grid-template-columns: auto auto auto;
-    margin-top: 40px;
-    gap: 20px;
-}
-
 .book-col h2{
     font-size: 60px;
-    padding: 20px;
     color: rgb(7, 7, 26);
 }
 
@@ -59,7 +55,19 @@
     justify-content: space-around;
 }
 
-.hero-btn8{
+#bookset1{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.book{
+    width: 100%;
+    margin: auto;
+}
+    
+.buk-btn{
     display: inline-block;
     text-decoration: none;
     color: rgb(3, 3, 85);
@@ -71,19 +79,69 @@
     border-radius: 20px;
 }
 
-.hero-btn8:hover{
+.buk-btn:hover{
     background: orangered;
     transition: 1s;
 }
 
-.book{
-    width: 100%;
-    margin: auto;
-}
+
+@media (max-width: 700px) {
+        .buk{
+            width: 80%;
+            padding-top: 20px;
+        }
+
+        .book-col h2{
+            font-size: 25px;
+        }
+        
+        .book-col p{
+            font-size: 15px;
+        }
+
+        .bg{
+            flex-direction: column;
+        }
+
+        #bookset1{
+            display: block;
+            width: 80%;
+            margin: auto;
+            margin-top: 10%;
+        }
+
+        #bookset1 img{
+            width: 100%;
+            height: auto;
+        }
+
+        .book{
+            width: 100%;
+            margin: auto;
+        }
+
+
+        .buk-btn{
+            display: inline-block;
+            text-decoration: none;
+            color: rgb(3, 3, 85);
+            border: 2px solid orangered;
+            padding: 6px 24px;
+            background: transparent;
+            cursor: pointer;
+            margin-top: 5px;
+            border-radius: 20px;
+            font-size: 15px;
+        }
+
+        .buk-btn:hover{
+            background: orangered;
+            transition: 1s;
+        }
+
+    }
 
     </style>
-
-
 </head>
 
 <body>
@@ -95,9 +153,9 @@
                     <ul id="menu">
                         <li ><a href="HOME.html">HOME</a></li>
                         <li ><a href="ABOUTUS.html">ABOUT US</a></li>
-                        <li ><a href="PROGRAMMES.html">OUR PROGRAMMES</a></li>
+                        <li ><a href="PROGRAMMES.html">PROGRAMMES</a></li>
                         <li ><a href="BOOKS.html">BOOKS & GAMES</a></li>
-                        <li ><a href="PARTNERSHIP.html">PARTNER WITH US</a></li>
+                        <li ><a href="PARTNERSHIP.html">PARTNERSHIP</a></li>
                         <li ><a href="BLOG.html">BLOG</a></li>
                         <li ><a href="donor-&-sponsor.html">SUPPORT US</a></li>
                     </ul>
@@ -123,16 +181,16 @@
                     idea worth considering from reading any of our books and playing games.</p>
                 <div class="bg">
                     <div class="bca">
-                        <a href="PROGRAMMES.html" class="hero-btn8">LEARN MORE ABOUT OUR PROGRAMMES</a>
+                        <a href="PROGRAMMES.html" class="buk-btn">Our Programmes</a>
                     </div>
                     <div class="bca">
-                        <a href="HOME.html" class="hero-btn8">HOME</a>
+                        <a href="invite-us-to-your-school.html" class="buk-btn">Invite us to your school</a>
                     </div>
                     <div class="bca">
-                        <a href="PARTNERSHIP.html" class="hero-btn8">PARTNER WITH US</a>
+                        <a href="PARTNERSHIP.html" class="buk-btn">Partner with us</a>
                     </div>
                     <div class="bca">
-                        <a href="chat-schoolway-Prog.html" class="hero-btn8">SUBSCRIBE TO OUR WEEKLY LIVE CHAT</a>
+                        <a href="chat-schoolway-Prog.html" class="buk-btn">Join our weekly chat</a>
                     </div>
                 </div>
             </div>
@@ -237,7 +295,7 @@
 </footer>
 
 
-    <!---------- JavaScript ---------->
+    <!---------- JavaScript ----------
 <script>
     var navbar = document.getElementById("navbar")
    
@@ -264,7 +322,7 @@ const videos = document.getElementsByClassName("video-bg")
 for (let i = 0; i < videos.length; i++) {
     videos[i].addEventListener("play", onPlay)
 }
-
+---->
 
 </script>
 

@@ -22,6 +22,13 @@
             width: 60%;
         }
 
+        @media (max-width: 700px) {
+            .headerdonor h1{
+                font-size: 30px;
+            }
+        }
+
+/*----------- content ---------*/
         .dsp{
             margin-top: 5%;
             display: flex;
@@ -54,31 +61,63 @@
             color: orangered;
         }
 
+        @media (max-width: 700px) {
+            .dsp{
+                flex-direction: column;
+            }
+            
+            .dsp1{
+                width: 80%;
+                margin: auto;
+            }
+
+            .dsp1 h1{
+                width: 100%;
+                font-size: 25px;
+            }
+
+            .dsp1 p{
+                width: 100%;
+                font-size: 15px;
+            }
+
+            .dsp1 a{
+                text-decoration: none;
+                color: orangered;
+            }
+        }
+
     /*------------- Quote Section -------*/
         .qte{
             display: flex;
+            width: 100%;
+
+        }
+
+        .qte1 img{
+            width: 100%;
         }
     
-        .qte1{
-            width: 80%;
+        .qte1:nth-child(2){
+            width: 50%;
             margin: auto;
-            padding-top: 40px;
+            padding: 30px 10px;
             text-align: center;
-            height: 350px;
+            height: auto;
             background-color: rgb(7, 7, 26);
         }
 
         .qte1 h1{
-            width: 100%;
+            width: 80%;
+            margin: auto;
             font-size: 35px;
             color: white;
-            padding: 20px 40px;
+            padding: 20px;
         }
 
         .qte1 p{
             font-size: 20px;
             color: white;
-            margin-bottom: 1%;
         }
 
         .qte1 hr{
@@ -87,19 +126,44 @@
             margin: auto;
         }
 
+        @media (max-width: 700px) {
+            .qte{
+                flex-direction: column;
+            }
+
+            .qte1 img{
+                width: 100%;
+                height: auto;            
+            }
+            
+            .qte1:nth-child(2){
+                width: 90%;
+            }
+
+            .qte1 h1{
+                width: 90%;
+                font-size: 25px;
+                padding: 5px;
+            }
+
+            .qte1 p{
+                font-size: 15px;
+                color: white;
+            }
+
+        }
+
     /*---------- Content ----------*/
         .dsps{
             width: 80%;
             margin: auto;
-            padding: 0 50px;
             margin-top: 3%;
-            margin-bottom: 5px;
+            margin-bottom: 5%;
         }
 
         .dsps1{
             display: flex;
             gap: 50px;
-            padding-left: 20px;
         }
 
         .dsps2{
@@ -123,24 +187,41 @@
             font-size: 25px;
         }
 
+       @media (max-width: 700px) {
+            .dsps1{
+                flex-direction: column;
+                gap: 50px;
+                padding-left: 0px;
+            }
+
+            .dsps2{
+                border: 5px solid rgb(7, 7, 26);
+                flex-basis: 30%;
+                padding: 20px 20px;
+                box-sizing: border-box;
+                justify-content: space-around;
+                text-align: center;
+                background-color: white;
+                border-radius: 20px;
+            }
+
+            .dsps h1{
+                font-size: 30px;
+                margin-top: 30px;
+                text-align: center;
+                color: rgb(7, 7, 26);
+            }
+
+            .dsps2 p{
+                font-size: 20px;
+            }            
+        }
+
 /*---------- buttons ----------*/
-        .bttn{
-            width: 80%;
-            margin: auto;
-            padding: 0 50px;
-            margin-bottom: 5%;
-        }
-
-        .bttn1{
-            display: flex;
-            gap: 50px;
-            padding-left: 20px;
-        }
-
         .bttn2{
             border: 3px solid rgb(7, 7, 26);
             flex-basis: 30%;
-            padding: 20px 20px;
+            padding: 10px 10px;
             box-sizing: border-box;
             justify-content: space-around;
             text-align: center;
@@ -150,13 +231,8 @@
 
         .bttn2:hover{
             background-color: orangered;
-            transition: 2s;
-        }
-
-        .bttn h1{
-            font-size: 40px;
-            margin-bottom: 30px;
             color: rgb(7, 7, 26);
+            transition: 2s;
         }
 
         .bttn2 p{
@@ -165,6 +241,10 @@
 
         .bttn2 a{
             text-decoration: none;
+            color: orangered;
+        }
+
+        .bttn2 a:hover{
             color: rgb(7, 7, 26);
         }
 
@@ -182,9 +262,9 @@
                     <ul id="menu">
                         <li ><a href="HOME.html">HOME</a></li>
                         <li ><a href="ABOUTUS.html">ABOUT US</a></li>
-                        <li ><a href="PROGRAMMES.html">OUR PROGRAMMES</a></li>
+                        <li ><a href="PROGRAMMES.html">PROGRAMMES</a></li>
                         <li ><a href="BOOKS.html">BOOKS & GAMES</a></li>
-                        <li ><a href="PARTNERSHIP.html">PARTNER WITH US</a></li>
+                        <li ><a href="PARTNERSHIP.html">PARTNERSHIP</a></li>
                         <li ><a href="BLOG.html">BLOG</a></li>
                         <li ><a href="donor-&-sponsor.html">SUPPORT US</a></li>
                     </ul>
@@ -228,13 +308,13 @@
 
     <!--------- Quote section ----------->
 <section class="qte">
-    <div class="qte">
+    <div class="qte1">
         <img width="700" height="350" src="Image/2boys.jpg">
     </div>
     <div class="qte1">
         <div class="qte2"></div><hr>
-            <h1>If education doesn't solve a problem, <br>then it is a problem;
-                if the educated do not solve <br>problems, then they are the
+            <h1>If education doesn't solve a problem, then it is a problem;
+                if the educated do not solve problems, then they are the
                 problems. <br><cite style="color: rgb(156, 156, 161);">
                     <small>Ernest Agyemang Yeboah</small></cite>
             
@@ -246,9 +326,9 @@
     </div>
 </section>
 
-    <!--------- Quote1 section ----------->
+<!-------- means of support ----------->
 <section class="dsps">
-    <h1>How to be of support to us</h1>
+    <h1>How to support us</h1>
     <div class="dsps1">
         <div class="dsps2">
             <p>You can become our donor partner 
@@ -257,48 +337,36 @@
                 our programs and the printing of our free booklets, 
                 which we distribute to the students of our host schools.
             </p>
+            <div class="bttn2">
+                <p><a href="donate.html">DONATE</a></p>
+            </div>
         </div>
         <div class="dsps2"><br><br><br><br><br><br><br>
-            <p>You don’t just want to 
-                throw money in the air, then you can sponsor a particular 
-                school to enjoy our paid service.
-            </p>
+            <p>You don’t just want to throw money in the air, then 
+                you can sponsor a particular school to enjoy our paid service.
+            </p><br><br><br><br><br><br>
+            <div class="bttn2">
+                <p><a href="sponsor-a-school.html">SPONSOR A SCHOOL</a></p>
+            </div>
         </div>
-        <div class="dsps2"><br><br><br><br>
+        <div class="dsps2"><br><br><br><br><br>
             <p>You want to have a touch of your money, 
                 then you can order our orientation books and games at a discounted 
                 price to be distributed to students on your behalf.
-            </p>
+            </p><br><br><br><br><br>
+            <div class="bttn2">
+                <p><a href="">ORDER BOOKS</a></p>
+            </div>
         </div>
-        <div class="dsps2"><br><br><br><br><br><br><br><br>
-            <p>Yes. You can also support us by just recommending 
-                us to schools.
-            </p>
-        </div>
-    </div>
-</section>
-
-<!------------ buttons ------------->
-<section class="bttn">
-    <div class="bttn1">
-        <div class="bttn2">
-            <p><a href="donate.html">DONATE</a>
-            </p>
-        </div>
-        <div class="bttn2">
-            <p><a href="sponsor-a-school.html">SPONSOR A SCHOOL</a></p>
-        </div>
-        <div class="bttn2">
-            <p><a href="">ORDER BOOKS</a></p>
-        </div>
-        <div class="bttn2">
-            <p><a href="recommend-us.html">RECOMMEND US</a></p>
+        <div class="dsps2"><br><br><br><br><br><br><br><br><br>
+            <p>Yes. You can also support us by just recommending us 
+                to schools.</p><br><br><br><br><br><br><br>
+            <div class="bttn2">
+                <p><a href="recommend-us.html">RECOMMEND US</a></p>
+            </div>
         </div>
     </div>
 </section>
-
-    <!--------- Quote1 section ----------->
-
 
 <!------------- Call To Action ------->
 <section class="cta">
@@ -364,7 +432,7 @@
 </footer>
 
 
-    <!---------- JavaScript ---------->
+    <!---------- JavaScript ----------
 <script>
     var navbar = document.getElementById("navbar")
    

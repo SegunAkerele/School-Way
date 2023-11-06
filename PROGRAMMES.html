@@ -22,7 +22,11 @@
     font-size: 80px;
     width: 80%;
 }
-
+@media (max-width: 700px) {
+    .headerprogra h1{
+        font-size: 30px;
+    }    
+}
 /*----------- body -----------*/
 .progra{
     width: 80%;
@@ -36,6 +40,7 @@
 }
 
 .progra1:nth-child(1){
+    width: 60%;
     margin-top: 5%;
     padding-right: 20px;
 }
@@ -45,18 +50,38 @@
     padding: 10px;
 }
 
+.progra1 img{
+    width: 100%;
+    margin-top: 10%;
+}
+@media (max-width: 700px) {
+    .progra{
+        flex-direction: column-reverse;
+    }
+    
+    .progra1:nth-child(1){
+        width: 100%;
+    }
+
+    .progra1 p{
+        font-size: 15px;
+        padding: 5px 0 5px 0;
+    }
+}
 
 /*------------- Quote Section -------*/
 .pgqt{
     width: 100%;
     margin: auto;
-    padding-top: 50px;
+    padding: 30px 10px 30px 10px;
     text-align: center;
     background-color: rgb(7, 7, 26);
-    height: 450px;
+    height: auto;
 }
 
 .pgqt1 h1{
+    width: 80%;
+    margin: auto;
     font-size: 50px;
     color: white;
     padding: 30px;
@@ -72,6 +97,23 @@
     color: orangered;
     width: 80%;
     margin: auto;
+}
+@media (max-width: 700px) {    
+    .pgqt{
+        padding: 30px 5px 30px 5px;
+    }
+
+    .pgqt1 h1{
+        width: 80%;
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .pgqt1 p{
+        width: 70%;
+        margin: auto;
+        font-size: 15px;
+    }
 }
 
 /*----------- prolist -----------*/
@@ -123,9 +165,47 @@
     text-decoration: none;
     display: inline-block;
     margin-top: 10px;
-    font-weight: 20px;
 }
+@media (max-width: 700px) {
+    .prolist h1{
+        font-size: 30px;
+    }
 
+    .prolista{
+        flex-direction: column;
+    }
+
+    .prolista1 img{
+        width: 100%;
+        margin-top: 3%;
+    }
+
+    .prolista1:nth-child(2){
+        width: 80%;
+        margin-top: 5%;
+    }
+
+    .prolista1 h3{
+        font-size: 20px;
+        margin-top: 0px;    
+    }
+
+    #hero-btn9c{
+        padding: 6px 20px;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+
+    .prolista1 a:hover{
+        color: orangered;
+        transition: 1s;
+    }
+
+    .prolista1 a{
+        font-size: 15px;
+    }
+    
+}
 /*--------- probtn ---------*/
 
 .probtn{
@@ -133,7 +213,7 @@
     margin: auto;
     display: flex;
     padding: 50px;
-    margin-left: 20%;
+    margin-left: 15%;
 }
 
 .probtn1{
@@ -159,7 +239,25 @@
     color: orangered;
     transition: 1s;
 }
+@media (max-width: 700px) {
+    .probtn{
+        flex-direction: column;
+        gap: 10px;
+        padding: 30px 0px;
+        margin-left: 0%;
+    }
 
+    .probtn1{
+        padding: 8px 18px;
+        margin-left: 30px;
+    }
+
+    .probtn1 a:hover{
+        color: orangered;
+        transition: 1s;
+    }
+    
+}
 
 /*--------- Contact form ---------*/
 .cfsb{
@@ -237,9 +335,9 @@
                     <ul id="menu">
                         <li ><a href="HOME.html">HOME</a></li>
                         <li ><a href="ABOUTUS.html">ABOUT US</a></li>
-                        <li ><a href="PROGRAMMES.html">OUR PROGRAMMES</a></li>
+                        <li ><a href="PROGRAMMES.html">PROGRAMMES</a></li>
                         <li ><a href="BOOKS.html">BOOKS & GAMES</a></li>
-                        <li ><a href="PARTNERSHIP.html">PARTNER WITH US</a></li>
+                        <li ><a href="PARTNERSHIP.html">PARTNERSHIP</a></li>
                         <li ><a href="BLOG.html">BLOG</a></li>
                         <li ><a href="donor-&-sponsor.html">SUPPORT US</a></li>
                     </ul>
@@ -278,9 +376,9 @@
 <!------------ quote ---------------->
     <section class="pgqt">
         <div class="pgqt1"><hr>
-            <h1>If education doesn't solve a problem, <br>then it is a problem;
-                if the educated do not solve <br>problems, then they are the
-                problems. <br><cite style="color: rgb(156, 156, 161);">
+            <h1>If education doesn't solve a problem, then it is a problem;
+                if the educated do not solve problems, then they are the
+                problems. <cite style="color: rgb(156, 156, 161);">
                     <small>Ernest Agyemang Yeboah</small></cite>
             </h1>
             <p>The <span style="color: orangered;">SCHOOL WAY</span> is an 

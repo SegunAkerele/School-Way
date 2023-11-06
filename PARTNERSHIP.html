@@ -20,25 +20,30 @@
     font-size: 80px;
     width: 60%;
 }
-
+@media (max-width: 700px) {
+    .headerpartner h1{
+        font-size: 30px;
+        width: 80%;
+    }    
+}
 
 /*------------- content 1 Section -------*/
 .pquote{
     display: flex;
+    margin-top: 5%;
 }
 
 .pquote1{
     width: 50%;
     text-align: center;
-    height: 450px;
-    margin-top: 5%;
+    height: auto;
+    padding: 30px 10px 30px 10px;
 }
 
 .pquote1 h1{
-    font-size: 35px;
+    font-size: 30px;
     color: white;
-    padding: 5px 30px;
-    padding-left: 30px;
+    padding: 20px 50px 20px 50px;
 }
 
 .pquote1 hr{
@@ -50,7 +55,6 @@
 .pquote1:nth-child(1){
     width: 40%;
     margin-left: 5%;
-    padding-top: 100px;
 }
 
 .pquote1:nth-child(1) p{
@@ -62,7 +66,6 @@
 .pquote1:nth-child(2){
     background-color: rgb(7, 7, 26);
     margin-left: 5%;
-    padding-top: 60px;
 }
 
 .buttonsb{
@@ -76,7 +79,7 @@
     cursor: pointer;
     color: white;
     margin: auto;
-    border: 2px solid white;
+    border: 2px solid orangered;
     border-radius: 20px;
 }
 
@@ -85,17 +88,79 @@
     color: rgb(7, 7, 26);
     transition: 1s;
 }
+@media (max-width: 700px) {
+    .pquote{
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
 
+    .pquote1{
+        width: 100%;
+        text-align: center;
+        height: auto;
+        padding: 30px 10px 30px 10px;
+    }
+
+    .pquote1 h1{
+        font-size: 25px;
+        color: white;
+        padding: 30px 10px 30px 10px;
+    }
+
+    .pquote1 hr{
+        color: orangered;
+        width: 80%;
+        margin: auto;
+    }
+
+    .pquote1:nth-child(1){
+        width: 100%;
+        margin: auto;
+        margin-left: 0;
+    }
+
+    .pquote1:nth-child(1) p{
+        font-size: 24px;
+        color: rgb(7, 7, 26);
+        padding: 0;
+    }
+
+    .pquote1:nth-child(2){
+        background-color: rgb(7, 7, 26);
+        margin-left: 5%;
+    }
+
+    .buttonsb{
+        width: 35%;
+        padding: 6px 20px;
+        text-decoration: none;
+        font-size: 15px;
+        margin-top: 5px;
+        cursor: pointer;
+        color: white;
+        margin: auto;
+        border: 2px solid orangered;
+        border-radius: 20px;
+    }
+
+    .buttonsb:hover{
+        background-color: orangered;
+        color: rgb(7, 7, 26);
+        transition: 1s;
+    }
+    
+}
 
 /*------------- content 2 Section -------*/
 .ptquote{
     display: flex;
+    width: 100%;
 }
 
 .ptquote1{
     width: 50%;
-    height: 450px;
-    margin-bottom: 5%;
+    height: auto;
 }
 
 .ptquote1:nth-child(2){
@@ -106,40 +171,64 @@
     text-align: justify;
 }
 
-.puquote1:nth-child(2) p{
+.ptquote1:nth-child(2) p{
     font-size: 30px;
     color: rgb(7, 7, 26);
-    padding: 50px;
 }
 
-.puquote1:nth-child(1){
-    background-color: rgb(7, 7, 26);
-    margin-left: 10%;
-    padding-top: 60px;
+@media (max-width: 700px) {
+    .ptquote{
+        flex-direction: column;
+    }
+
+    .ptquote1{
+        width: 80%;
+        height: auto;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    .ptquote1:nth-child(2){
+        width: 100%;
+        margin: auto;
+        margin-left: 0%;
+        padding-top: 20px;
+        text-align: justify;
+    }
+
+    .ptquote1:nth-child(2) p{
+        width: 80%;
+        margin: auto;
+        font-size: 22px;
+    }
+
+    .ptquote1:nth-child(1){
+        margin-left: 0%;
+        padding-top: 0px;
+    }
 }
 
 /*----------- content 3 section --------*/
 .partex{
-    width: 70%;
+    width: 60%;
     margin: auto;
-    margin-bottom: 1%;
+    padding-top: 3%;
 }
 
 .partex h1{
     font-size: 40px;
     color: rgb(7, 7, 26);
     margin-bottom: auto;
-}
-
-.partex h1:nth-child(2){
-    margin-top: 10%;
+    margin-top: 3%;
 }
 
 .partex p{
     font-size: 20px;
     font-weight: 40px;
-    padding-bottom: 20px;
-
+    padding-bottom: 15px;
 }
 
 .partex blockquote{
@@ -147,22 +236,43 @@
     padding-left: 20%;
     padding-right: 20%;
     font-size: 20px;
-    font-weight: 30px;
 }
+@media (max-width: 700px) {
+    .partex{
+        width: 80%;
+    }
 
+    .partex h1{
+        font-size: 25px;
+    }
+
+    .partex p{
+        font-size: 15px;
+    }
+
+    .partex blockquote{
+        text-align: center;
+        padding-left: 0%;
+        padding-right: 0%;
+        font-size: 15px;
+    }
+
+}
 
 /*------------- Quote Section -------*/
 .pcote{
     width: 100%;
     margin: auto;
-    padding-top: 50px;
+    padding: 30px 10px 30px 10px;
     text-align: center;
     background-color: rgb(173, 173, 173);
-    height: 450px;
+    height: auto;
+    margin-top: 3%;
 }
 
-
 .pcote h1{
+    width: 80%;
+    margin: auto;
     font-size: 50px;
     color: rgb(7, 7, 26);
     padding: 30px;
@@ -171,7 +281,7 @@
 .pcote p{
     font-size: 20px;
     color: rgb(7, 7, 26);
-    margin-bottom: 1%;
+    padding: 10px;
 }
 
 .pcote hr{
@@ -179,12 +289,32 @@
     width: 80%;
     margin: auto;
 }
+@media (max-width: 700px) {
+    .pcote h1{
+        font-size: 25px;
+        padding: 20px 10px;
+    }
+
+    .pcote p{
+        font-size: 15px;
+        width: 80%;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .pcote hr{
+        color: orangered;
+        width: 80%;
+        margin: auto;
+    }
+    
+}
+
 
 /*---------- Content ----------*/
 .htp{
-    width: 80%;
+    width: 70%;
     margin: auto;
-    padding: 0 50px;
     margin-top: 3%;
     margin-bottom: 5%;
 }
@@ -192,7 +322,6 @@
 .htp1{
     display: flex;
     gap: 50px;
-    padding-left: 20px;
 }
 
 .htp2{
@@ -225,7 +354,26 @@
     text-decoration: none;
     color: rgb(7, 7, 26);
 }
+@media (max-width: 700px) {
+    .htp{
+        width: 80%;
+    }
 
+    .htp1{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .htp h1{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .htp2 p{
+        font-size: 25px;
+    }
+    
+}
 
     </style>
 </head>
@@ -239,9 +387,9 @@
                     <ul id="menu">
                         <li ><a href="HOME.html">HOME</a></li>
                         <li ><a href="ABOUTUS.html">ABOUT US</a></li>
-                        <li ><a href="PROGRAMMES.html">OUR PROGRAMMES</a></li>
+                        <li ><a href="PROGRAMMES.html">PROGRAMMES</a></li>
                         <li ><a href="BOOKS.html">BOOKS & GAMES</a></li>
-                        <li ><a href="PARTNERSHIP.html">PARTNER WITH US</a></li>
+                        <li ><a href="PARTNERSHIP.html">PARTNERSHIP</a></li>
                         <li ><a href="BLOG.html">BLOG</a></li>
                         <li ><a href="donor-&-sponsor.html">SUPPORT US</a></li>
                     </ul>
@@ -308,9 +456,9 @@
             to travel. Second, if he is wise, he must on arriving, find a reliable 
             guide who can point out to him the chief features of distinction and 
             interest. After this he will be equipped to wander by himself and make 
-            his discoveries… otherwise he will be bewildered and go astray.</em><br><br>
+            his discoveries… otherwise he will be bewildered and go astray.</em><br>
             <cite>H. B. Drake</cite>
-        </blockquote><br><br>
+        </blockquote><br>
         <h1>Why You Should Partner With Us</h1>
         <p>How many of schoolchildren in our low-income communities today understand the 
             essence of their schooling? How many of those who know the essence know how to
@@ -331,12 +479,12 @@
 
     <!--------- Quote section ----------->
 <section class="pcote"><hr>
-    <h1>Whether we act or not, changes happen.<br> 
-        However, we can positively influence the<br> 
-        changes that are negatively affecting our<br> 
-        lives &amp; the world when we take a step.<br></h1>
+    <h1>Whether we act or not, changes happen. 
+        However, we can positively influence the 
+        changes that are negatively affecting our 
+        lives &amp; the world when we take a step.</h1>
     <p>We are happy having you take a step with the 
-        <b style="color: orangered;">SCHOOL WAY</b>.</p><br><hr>
+        <b style="color: orangered;">SCHOOL WAY</b>.</p><hr>
 </section>
 
 

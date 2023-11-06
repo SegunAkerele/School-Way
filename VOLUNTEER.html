@@ -21,24 +21,33 @@
     width: 60%;
 }
 
+@media (max-width: 700px) {
+    .headervolunt h1{
+        font-size: 30px;
+    }    
+}
+
 
 /*------------- Quote Section -------*/
+.vquote{
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+}
+
 .vquote1{
     width: 50%;
     text-align: center;
     background-color: rgb(7, 7, 26);
-    height: 450px;
-    margin-top: 5%;
-    margin-bottom: 2%;
-    margin-right: 5%;
+    height: auto;
+    margin-bottom: 5%;
 }
 
 .vquote1 h1{
     font-size: 35px;
     color: white;
-    padding-left: 30px;
-    padding-top: 2%;
-    padding-right: 2%;
+    padding: 2% 30px 0 2%;
 }
 
 .vquote1 hr{
@@ -47,19 +56,10 @@
     margin: auto;
 }
 
-.vquote1 hr:nth-child(1){
-    margin-top: 1%;
-}
-
-.vquote{
-    display: flex;
-}
-
 .vquote1:nth-child(1){
     background-color: transparent;
-    border: 5px solid orangered;
-    width: 30%;
-    margin-left: 5%;
+    width: 35%;
+    margin: auto;
     padding-top: 30px;
 }
 
@@ -71,10 +71,43 @@
 }
 
 .vquote1:nth-child(2){
-    margin-left: 5%;
-    padding-right: 3%;
+    margin-right: 3%;
     padding: 40px;
     margin-top: 5%;
+}
+
+@media (max-width: 700px) {
+    .vquote{
+        flex-direction: column;
+    }
+
+    .vquote1{
+        width: 95%;
+        margin-bottom: 5%;
+    }
+
+    .vquote1 h1{
+        font-size: 25px;
+        padding: 0% 10px 0 2%;
+    }
+
+    .vquote1:nth-child(1){
+        width: 100%;
+    }
+
+    .vquote1:nth-child(1) p{
+        font-size: 15px;
+        padding: 0px;
+        padding-top: 0px;
+        margin-bottom: 5%;
+    }
+
+    .vquote1:nth-child(2){
+        margin-right: 0%;
+        padding: 30px 10px 30px 10px;
+        margin-top: 5%;
+    }
+    
 }
 
 /*--------- vbody ----------*/
@@ -87,8 +120,7 @@
 .vbody h1{
     font-size: 35px;
     color: rgb(9, 9, 32);
-    padding: 5px;
-    padding-top: 3%;
+    margin-top: 3%;
 }
 
 .vbody p{
@@ -96,6 +128,31 @@
     text-align: justify;
 }
 
+.vbody h2{
+    font-size: 25px;
+    margin-top: 3%;
+}
+
+@media (max-width: 700px) {
+    .vbody{
+        width: 80%;
+        margin: auto;
+    }
+
+    .vbody h1{
+        font-size: 25px;
+        margin-top: 3%;
+    }
+
+    .vbody p{
+        font-size: 15px;
+    }
+
+    .vbody h2{
+        font-size: 20px;
+        margin-top: 10%;
+    }
+}
 
 /*--------- Contact form ---------*/
 .cfsv{
@@ -159,6 +216,27 @@
 .buttonsv:hover{
     background-color: orangered;
 }
+@media (max-width: 700px) {
+    .cfsv{
+        width: 75%;
+        border-radius: 10PX;
+    }
+
+    .cfsv1{
+        border-radius: 10px;
+    }
+
+    .cfsv h1{
+        font-size: 25px;
+    }
+
+    .buttonsv{
+        width: 40%;
+        padding: 12px 0px;
+        border-radius: 20px;
+    }
+}
+
 
 /*----------- contact ---------*/
 
@@ -194,9 +272,9 @@
                     <ul id="menu">
                         <li ><a href="HOME.html">HOME</a></li>
                         <li ><a href="ABOUTUS.html">ABOUT US</a></li>
-                        <li ><a href="PROGRAMMES.html">OUR PROGRAMMES</a></li>
+                        <li ><a href="PROGRAMMES.html">PROGRAMMES</a></li>
                         <li ><a href="BOOKS.html">BOOKS & GAMES</a></li>
-                        <li ><a href="PARTNERSHIP.html">PARTNER WITH US</a></li>
+                        <li ><a href="PARTNERSHIP.html">PARTNERSHIP</a></li>
                         <li ><a href="BLOG.html">BLOG</a></li>
                         <li ><a href="donor-&-sponsor.html">SUPPORT US</a></li>
                     </ul>
@@ -240,29 +318,22 @@
             instructed on how to facilitate our programmes as learning and learner 
             advisory services provider. 
         </p>
-    </div>
-    <div class="vbody1">
         <h1>Who Can Join?</h1>
         <p>Anyone above secondary school age is welcomed to join our list of 
             volunteers.</p>
-    </div>
-    <div class="vbody1">
         <h1>How Does It Work?</h1>
         <p>As our field partner, we call on you to facilitate our programmes
             at schools that request for our services in your locality. We only 
             contact you when such a school is in your locality. We will supply
             you with the neccessary resources to be used.
         </p>
-    </div>
-    <div class="vbody1">
         <h1>Will I Be Paid?</h1>
         <p>No. It is a volunteering service. However, we shall support you with 
             everything that will make your labour of love and passion enjoyable.<br>
         </p>
         <p><b>Note:</b> We do offer paid services. You will be paid if you are
-        called to facilitate such a programme.</p><br><br>
-    </div>
-    <h3>Please kindly fill in the form below to indicate your interest.</h3>
+        called to facilitate such a programme.</p>
+    <h2>Please kindly fill in the form below to indicate your interest.</h2>
 </section>
 
 <!-------- contact form ---------->
@@ -359,33 +430,6 @@
 
     <!---------- JavaScript ---------->
 <script>
-    var navbar = document.getElementById("navbar")
-   
-    window.onscroll = function(){
-        if(window.pageYOffset >= menu.offsetTop){
-            navbar.classList.add("sticky");
-        }
-    }
-
-
-
-// assume only one video is playing at a time
-var videoPlaying = null;
-
-const onPlay = function() {
-    if (videoPlaying && videoPlaying != this) {
-        videoPlaying.pause()
-    }
-    videoPlaying = this
-}
-
-// init event handler
-const videos = document.getElementsByClassName("video-bg")
-for (let i = 0; i < videos.length; i++) {
-    videos[i].addEventListener("play", onPlay)
-}
-
-
 </script>
 
 </body>

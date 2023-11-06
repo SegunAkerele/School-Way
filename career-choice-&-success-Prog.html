@@ -21,6 +21,12 @@
             width: 60%;
         }
 
+        @media (max-width: 700px) {
+            .headerccs h1{
+                font-size: 30px;
+            }            
+        }
+
 
 /*---------- the content -----------*/
 
@@ -40,11 +46,40 @@
 
         .ccs1 h1{
             margin-top: 10%;
+            font-size: 30px;
+            color: rgb(2, 2, 66);
         }
 
         .ccs1 p{
             font-size: 20px;
             text-align: justify;
+        }
+
+        @media (max-width: 700px) {
+            .ccsp{
+                width: 80%;
+                margin: auto;
+                margin-top: 5%;
+            }
+
+            .ccs{
+                flex-direction: column;
+            }
+
+            .ccs1{
+                padding: 10px;
+            }
+
+            .ccs1 h1{
+                margin-top: 5%;
+                font-size: 20px;
+                color: rgb(2, 2, 66);
+            }
+
+            .ccs1 p{
+                font-size: 15px;
+                text-align: justify;
+            }            
         }
 
         .ccs-btn{
@@ -71,6 +106,18 @@
             gap: 40px;
         }
 
+        @media (max-width: 700px) {
+            .ccs-btn{
+                font-size: 15px;
+            }
+
+            .ccs2{
+                display: flex;
+                gap: 20px;
+            }
+            
+        }
+
 
     </style>
 
@@ -85,9 +132,9 @@
                     <ul id="menu">
                         <li ><a href="HOME.html">HOME</a></li>
                         <li ><a href="ABOUTUS.html">ABOUT US</a></li>
-                        <li ><a href="PROGRAMMES.html">OUR PROGRAMMES</a></li>
+                        <li ><a href="PROGRAMMES.html">PROGRAMMES</a></li>
                         <li ><a href="BOOKS.html">BOOKS & GAMES</a></li>
-                        <li ><a href="PARTNERSHIP.html">PARTNER WITH US</a></li>
+                        <li ><a href="PARTNERSHIP.html">PARTNERSHIP</a></li>
                         <li ><a href="BLOG.html">BLOG</a></li>
                         <li ><a href="donor-&-sponsor.html">SUPPORT US</a></li>
                     </ul>
@@ -116,6 +163,8 @@
                 throughout their secondary school days – unless when they discuss it among 
                 themselves. How many of them know there are more careers than they would 
                 list? No wonder many young people often dream small.</p><br>
+
+                <img src="Image/schoolway-image.jpg" width="100%" height="auto"><br><br>
                 
             <p>As students must learn about everything in the classroom, they must also know 
                 about the job market. That will help them make connections between learning in 
@@ -140,7 +189,7 @@
                 <br><a href="HOME.html" class="ccs-btn">Home</a>
         </div>
         <div class="ccs1">
-            <img src="Image/career.jpg" width="600" height="400"><br><br>
+            <img src="Image/career.jpg" width="100%" height="auto"><br><br>
             <br><br><h1>ORDER THIS PROGRAMME</h1>
             <div class="ccs2">
                 <div class="ccs3">
@@ -155,7 +204,7 @@
             <br><a href="how-to-learn-Prog.html" class="ccs-btn">How-to-Learn Orientation Programme</a><br><br>
             <br><a href="exam-prep-&-success-Prog.html" class="ccs-btn">Exam Preparation &amp; Success Orientation</a><br><br>
             <br><a href="soft-skills-development-Prog.html" class="ccs-btn">Soft Skills &amp; Character 
-                Development Orientation</a><br><br>  
+                Development</a><br><br>  
         </div>        
     </div>
 </section>
@@ -226,33 +275,6 @@
 
     <!---------- JavaScript ---------->
 <script>
-    var navbar = document.getElementById("navbar")
-   
-    window.onscroll = function(){
-        if(window.pageYOffset >= menu.offsetTop){
-            navbar.classList.add("sticky");
-        }
-    }
-
-
-
-// assume only one video is playing at a time
-var videoPlaying = null;
-
-const onPlay = function() {
-    if (videoPlaying && videoPlaying != this) {
-        videoPlaying.pause()
-    }
-    videoPlaying = this
-}
-
-// init event handler
-const videos = document.getElementsByClassName("video-bg")
-for (let i = 0; i < videos.length; i++) {
-    videos[i].addEventListener("play", onPlay)
-}
-
-
 </script>
 
 </body>

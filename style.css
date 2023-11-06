@@ -9,7 +9,7 @@
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,6,30,0.7)
-    ,rgba(4,6,30,0.7)),url(Image/Picture37.jpg);
+    ,rgba(4,6,30,0.7)),url(Image/assembly.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -34,14 +34,14 @@ nav img{/*logo*/
 .nav-link ul li{
     display: inline-block;
     list-style: none;
-    padding: 8px 12px;
+    padding: 10px 12px;
     position: relative;    
 }
 
 .nav-link ul li a{
     color: white;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .nav-link ul li::after{
@@ -72,9 +72,9 @@ nav img{/*logo*/
 }
 
 .headertxt h1{
-    width: 70%;
+    width: 80%;
     margin: auto;
-    font-size: 100px;
+    font-size: 80px;
 }
 
 .headertxt p{
@@ -107,11 +107,16 @@ nav img{/*logo*/
     transition: 1s;
 }
 
-nav .fa{
+nav .fa-solid{
     display: none;
 }
 
 @media(max-width: 700px) {
+    .header{
+        height: 100vh;
+        width: 100%;
+    }
+
     .headertxt h1{
         font-size: 30px;
     }
@@ -136,7 +141,7 @@ nav .fa{
         transition: 1s;
     }
 
-    nav .fa{
+    nav .fa-solid{
         display: block;
         color: white;
         margin: 10px;
@@ -183,7 +188,7 @@ nav .fa{
     .quote{
         width: 100%;
         margin: auto;
-        padding: 40px 0 40px 0;
+        padding: 30px 0 30px 0;
         text-align: center;
         background-color: rgb(7, 7, 26);
         height: auto;
@@ -191,7 +196,7 @@ nav .fa{
     }
     
     .quote h1{
-        font-size: 30px;
+        font-size: 25px;
         color: white;
         padding: 10px 30px 10px 30px;
     }
@@ -219,7 +224,7 @@ nav .fa{
 
 .thegoal{
     text-align: center;
-    width: 60%;
+    width: 80%;
     margin: auto;
     margin-bottom: 20px;
 }
@@ -266,9 +271,9 @@ nav .fa{
 }
 
 .about-us p{
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(2, 2, 53);
-    padding: 40px;
+    padding: 60px 40px 10px 40px;
 }
 
 .about-us video{
@@ -276,6 +281,26 @@ nav .fa{
     height: auto;
     margin-top: 5%;
 }
+
+.hero-btn2{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 2px solid orangered;
+    padding: 12px 34px;
+    background: orangered;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+
+.hero-btn2:hover{
+    border: 2px solid orangered;
+    background: transparent;
+    transition: 1s;
+}
+
+
 
 @media(max-width: 700px) {
     .rw1{
@@ -311,10 +336,10 @@ nav .fa{
 
 .abus{
     flex-basis: 30%;
-    padding: 20px 12px;
+    padding: 30px 30px;
     border-radius: 10px;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     background: rgb(202, 201, 201);
     box-sizing: border-box;
 }
@@ -324,9 +349,6 @@ nav .fa{
     transition: 0.5s;
 }
 
-.abus a{
-    font-size: 16px;
-}
 
 @media(max-width: 700px) {
     .rw2{
@@ -348,13 +370,32 @@ nav .fa{
 }
 
 .he1{
-    padding-left: 150px;
+    padding-left: 40px;
 }
 
 .he2{
-    padding-right: 100px;
-    font-size: 25px;
+    padding: 20px;
+    font-size: 20px;
 }
+
+.hero-btna{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 2px solid orangered;
+    padding: 10px 28px;
+    background: orangered;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+
+.hero-btna:hover{
+    border: 2px solid orangered;
+    background: transparent;
+    transition: 1s;
+}
+
 
 @media(max-width: 700px) {
     .rw3{
@@ -368,44 +409,9 @@ nav .fa{
     }   
 
     .he2{
-        padding-right: 0;
+        padding: 0;
         font-size: 20px;
     }
-
-}
-.hero-btn2{
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    border: 2px solid orangered;
-    padding: 12px 34px;
-    background: orangered;
-    cursor: pointer;
-    margin-top: 5px;
-    border-radius: 20px;
-}
-
-.hero-btn2:hover{
-    border: 2px solid orangered;
-    background: transparent;
-    transition: 1s;
-}
-
-.hero-btn1{
-    text-decoration: none;
-    color: black;
-    border: 2px solid orangered;
-    padding: 12px 34px;
-    background: orangered;
-    cursor: pointer;
-    margin-top: 5px;
-    border-radius: 20px;
-}
-
-.hero-btn1:hover{
-    border: 2px solid orangered;
-    background: transparent;
-    transition: 1s;
 }
 
 
@@ -516,7 +522,7 @@ nav .fa{
 .quote1{
     width: 100%;
     margin: auto;
-    padding: 40px 0 40px 0;
+    padding: 30px 0 30px 0;
     text-align: center;
     background-color: rgb(7, 7, 26);
     height: auto;
@@ -549,7 +555,7 @@ nav .fa{
     }
     
     .quote1 h1{
-        font-size: 30px;
+        font-size: 25px;
         color: white;
         padding: 10px 30px 10px 30px;
     }
@@ -564,10 +570,10 @@ nav .fa{
 
 /*--------------- Section Programmes -----------*/
 .programmes{
-    width: 100%;
+    width: 80%;
     margin: auto;
     text-align: center;
-    height: 880px;
+    height: auto;
     color: rgb(2, 2, 53);
 }
 
@@ -582,12 +588,13 @@ nav .fa{
     margin: 5% 0 1% 0;
 }
 
-.programme1 h1{
-    font-size: 40px;
+.programme1 h2{
+    font-size: 30px;
+    margin-bottom: 2%;
     color: orangered;
 }
 
-.programme1 h1:hover{
+.programme1 h2:hover{
     color: white;
 }
 
@@ -599,19 +606,14 @@ nav .fa{
 
 .row5{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     color: white;
-    padding: 0 50px;
 }
 
 .programme1{
+    width: 35%;
     background: transparent;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 10;
     transition: 0.5s;
-    padding-bottom: 20px;
 }
 
 .programme1:hover{
@@ -637,85 +639,48 @@ nav .fa{
 }
 
 @media (max-width: 700px) {
-    .programmes{
-        width: 100%;
-        margin: auto;
-        text-align: center;
-        height: auto;
-        color: rgb(2, 2, 53);
-    }
-    
     .programmes p{
-        margin-bottom: 0%;
+        margin-bottom: 2%;
         font-size: 15px;
-        padding: 10px;
     }
-    
+
     .programmes h1{
         font-size: 30px;
-        color:  rgb(2, 2, 53);
-        margin: 3% 0 1% 0;
     }
-    
-    .programme1 h1{
-        font-size: 25px;
+
+    .programme1 h2{
+        font-size: 20px;
+        margin-bottom: 2%;
         color: orangered;
     }
-    
-    .programme1 h1:hover{
-        color: white;
-    }
-    
+
     .programme1 p{
-        font-size: 15px;
+        font-size: 20px;
         margin-bottom: 10px;
         padding: 10px;
     }
 
-    .programme1 img{
-        width: 80%;
-        height: 40%;
-    }
-    
     .row5{
         flex-direction: column;
-        justify-content: space-between;
         color: white;
-        padding: 0px;
-        margin-bottom: 5%;
     }
-    
+
     .programme1{
+        width: auto;
         background: transparent;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 10;
         transition: 0.5s;
-        padding-bottom: 20px;
+        margin-bottom: 2%;
     }
-    
+
     .programme1:hover{
         background: rgb(7, 7, 26);
     }
-    
+
     .hero-btn5{
-        display: inline-block;
-        text-decoration: none;
         font-size: 15px;
-        color: orangered;
-        border: 2px solid orangered;
-        padding: 8px 24px;
-        background: transparent;
-        cursor: pointer;
-        border-radius: 20px;
+        padding: 6px 20px;
     }
-    
-    .hero-btn5:hover{
-        background: orangered;
-        color: rgba(5, 9, 58, 0.87);
-        transition: 1s;
-    } 
+
 }
 
 /*------------ probas ------------*/
@@ -724,15 +689,30 @@ nav .fa{
     margin: auto;
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
-.probas1:nth-child(2){
-    margin-right: 20%;
+.probas-btn{
+    text-decoration: none;
+    font-size: 15px;
+    color: orangered;
+    border: 2px solid orangered;
+    padding: 12px 34px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 20px;
 }
+
+.probas-btn:hover{
+    background: orangered;
+    color: rgba(5, 9, 58, 0.87);
+    transition: 1s;
+}
+
 
 @media (max-width: 700px) {
     .probas{
-        width: 90%;
+        width: auto;
         margin: auto;
         flex-direction: column;
         gap: 20px;
@@ -745,14 +725,20 @@ nav .fa{
     
     .probas1:nth-child(2){
         margin-right: 0%;
-    }        
+    }
+    
+    .probas-btn{
+        font-size: 15px;
+        padding: 8px 24px;
+    }
+   
 }
 
 /*------------- Quote Section -------*/
 .quote2{
     width: 100%;
     margin: auto;
-    padding: 40px 0 40px 0;
+    padding: 30px 0 30px 0;
     text-align: center;
     background-color: rgb(7, 7, 26);
     height: auto;
@@ -785,7 +771,6 @@ nav .fa{
     .quote2{
         width: 100%;
         margin: auto;
-        padding: 40px 0 40px 0;
         text-align: center;
         background-color: rgb(7, 7, 26);
         height: auto;
@@ -814,7 +799,7 @@ nav .fa{
 /*---------- New Section Books ---------*/
 
 .book{
-    width: 70%;
+    width: 80%;
     margin: auto;
     padding-top: 10%;
     height: auto;
@@ -822,31 +807,46 @@ nav .fa{
     margin-bottom: 5%;
 }
 
-.book1 img{
-    width: 90%;
+.books{
+    width: 80%;
+    margin: auto;
 }
 
-.books h1{
-    font-size: 90px;
+.books:nth-child(1){
+    width: 30%;
+    margin: auto;
+}
+
+.books:nth-child(2){
+    width: 50%;
+    margin: auto;
+}
+
+.book1 img{
+    width: 100%;
+}
+
+.book1 h1{
+    font-size: 60px;
     color: rgb(7, 7, 26);
     text-align: left;
 }
 
-.books p{
+.book1 p{
     font-size: 20px;
     color: orangered;
     text-align: left;
     margin-bottom: 20px;
 }
 
-.books h2{
-    font-size: 30px;
+.book1 h2{
+    font-size: 25px;
     text-align: left;
     padding: 20px;
     background-color: orangered;
 }
 
-.book2{
+.book1{
     display: flex;
     justify-content: space-around;
 }
@@ -883,35 +883,46 @@ nav .fa{
         text-align: center;
     }
 
-    .book1 img{
+    .books{
         width: 80%;
+        margin: auto;
     }
-
-    .books h1{
-        font-size: 25px;
-        color: rgb(7, 7, 26);
-        margin-top: 3%;
+    
+    .books:nth-child(1){
+        width: 80%;
+        margin: auto;
+    }
+    
+    .books:nth-child(2){
+        width: 100%;
+        margin: auto;
+    }
+    
+    .book1 img{
+        width: 100%;
+    }
+    
+    .book1 h1{
+        font-size: 30px;
         text-align: center;
     }
-
-    .books p{
-        font-size: 15px;
+    
+    .book1 p{
+        font-size: 20px;
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
-
-    .books h2{
-        font-size: 17px;
-        text-align: center;
-        padding: 15px;
+    
+    .book1 h2{
+        font-size: 20px;
+        text-align: left;
+        padding: 10px;
     }
-
-    .book2{
-        display: flex;
-        justify-content: space-around;
+    
+    .book1{
+        flex-direction: column;
     }
-
-
+    
     .b-btn{
         display: inline-block;
         text-decoration: none;
@@ -1123,9 +1134,8 @@ hr{
 .blogs{
     width: 80%;
     margin: auto;
-    text-align: center;
     height: auto;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
 }
 
 .blogs h1{
@@ -1137,31 +1147,24 @@ hr{
 
 .blog{
     display: flex;
-    font-size: 20px;
-}
-
-.blog1 img{
     justify-content: space-around;
-    border-radius: 20px;
 }
 
-.blog1:last-child{
-    padding-left: 20px;
+.blog1{
+    width: 35%;
 }
 
 .blog h2{
-    text-align: left;
     color: rgb(2, 2, 53);
-    padding: 0 20px 0 0;
+    padding: 10px
 }
 
 .blog p{
-    padding: 20px;
-    text-align: left;    
+    font-size: 20px;
+    padding-right: 50PX;   
 }
 
 .blog-btn{
-    display: inline-block;
     text-decoration: none;
     color: rgba(5, 9, 58, 0.87);
     border: 2px solid orangered;
@@ -1179,7 +1182,8 @@ hr{
     transition: 1s;
 }
 
-@media (max-width: 700px) {    
+@media (max-width: 700px) {
+
     .blogs h1{
         font-size: 30px;
     }
@@ -1188,20 +1192,18 @@ hr{
         flex-direction: column;
     }
     
-    .blog1 img{
-        border-radius: 0px;
-        width: 100%;
-        height: 200px;
+    .blog1{
+        width: auto;
     }
     
     .blog h2{
-        font-size: 25px;
-        padding: 0;
+        color: rgb(2, 2, 53);
+        padding: 10px
     }
-
+    
     .blog p{
-        padding: 5px;
-        text-align: left;    
+        font-size: 20px;
+        margin-bottom: 5%;    
     }
 
     .blog a{
@@ -1220,7 +1222,7 @@ hr{
 .quote3{
     width: 100%;
     margin: auto;
-    padding: 40px 0 40px 0;
+    padding: 30px 0 30px 0;
     text-align: center;
     background-color: rgb(7, 7, 26);
     height: auto;
@@ -1251,7 +1253,6 @@ hr{
     .quote3{
         width: 100%;
         margin: auto;
-        padding: 40px 0 40px 0;
         text-align: center;
         background-color: rgb(7, 7, 26);
         height: auto;
@@ -1260,7 +1261,7 @@ hr{
     .quote3 h1{
         width: 80%;
         margin: auto;
-        font-size: 30px;
+        font-size: 25px;
         padding: 10px 0 10px 0;
         color: white;
     }
@@ -1385,10 +1386,15 @@ hr{
     padding-top: 3%;
 }
 
+.footer h3{
+    padding-left: 50px;
+    color: white;
+}
+
 .footer p{
     font-size: 20px;
     color: white;
-    padding-left: 50px;
+    padding-left: 20px;
 }
 
 .row9{
@@ -1437,8 +1443,8 @@ hr{
     }
     
     .footer p{
-        font-size: 15px;
-        padding-left: 30px;
+        font-size: 10px;
+        padding-left: 20px;
     }
    
     .row9{
@@ -1452,7 +1458,7 @@ hr{
     }
     
     .footer-col h2{
-        font-size: 20px;
+        font-size: 15px;
         padding-top: 0;
     }
     

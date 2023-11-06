@@ -22,14 +22,25 @@
         font-size: 80px;
         width: 60%;
     }
-    
+
+    @media (max-width: 700px) {
+        .headerpartorg h1{
+            font-size: 30px;
+        }       
+    }
     
     /*------------- Quote Section -------*/
+    .opquote{
+        width: 80%;
+        margin: auto;
+        display: flex;
+    }
+
     .opquote1{
         width: 50%;
         text-align: center;
         background-color: rgb(7, 7, 26);
-        height: 450px;
+        height: auto;
         margin-bottom: 5%;
     }
     
@@ -37,7 +48,7 @@
         font-size: 35px;
         color: white;
         text-align: center;
-        padding-top: 10px;
+        padding: 10px 30px 0px 30px;
     }
     
     .opquote1 hr{
@@ -46,45 +57,69 @@
         margin: auto;
     }
     
-    .opquote{
-        display: flex;
-    }
-    
     .opquote1:nth-child(1){
-        margin-left: 5%;
-        padding-right: 3%;
         padding: 40px;
-        padding-top: 45px;
         margin-top: 5%;
     }
 
     .opquote1:nth-child(2){
         background-color: transparent;
         width: 30%;
-        padding-top: 50px;
-        margin-top: 5%;
+        margin-top: 10%;
         margin-left: 5%;
     }
     
     .opquote1:nth-child(2) p{
-        font-size: 29px;
+        font-size: 30px;
         color: rgb(7, 7, 26);
         padding: 30px;
-        padding-top: 5px;
+    }
+
+    @media (max-width: 700px) {
+        .opquote{
+            flex-direction: column;
+        }
+
+        .opquote1{
+            width: 95%;
+        }
+        
+        .opquote1 h1{
+            font-size: 25px;
+            padding: 5px 10px 0px 10px;
+        }
+        
+        .opquote1:nth-child(1){
+            padding: 30px 10px 30px 10px;
+            margin-top: 5%;
+        }
+
+        .opquote1:nth-child(2){
+            width: 100%;
+            margin-top: 0%;
+            margin-left: 0%;
+        }
+        
+        .opquote1:nth-child(2) p{
+            font-size: 20px;
+            padding: 20px;
+        }        
     }
 
 /*---------- orgptna quote ---------*/
 .orgptna{
     width: 100%;
     margin: auto;
-    padding-top: 50px;
+    padding: 40px 10px 40px 10px;
     text-align: center;
     background-color: rgb(173, 173, 173);
-    height: 350px;
+    height: auto;
 }
 
 
 .orgptna h1{
+    width: 50%;
+    margin: auto;
     font-size: 50px;
     color: rgb(7, 7, 26);
     padding: 30px;
@@ -102,9 +137,26 @@
     margin: auto;
 }
 
+@media (max-width: 700px) {
+        .orgptna{
+            padding: 40px 0px 40px 0px;
+        }
+
+        .orgptna h1{
+            width: 80%;
+            font-size: 30px;
+            padding: 10px;
+        }
+
+        .orgptna p{
+            width: 80%;
+            margin: auto;
+            font-size: 15px;
+        }
+    }
 
 /*--------- orgpt hd ----------*/
-    .orgpt{
+.orgpt{
     width: 60%;
     margin: auto;
 }
@@ -112,7 +164,6 @@
 .orgpt h1{
     font-size: 35px;
     color: rgb(9, 9, 32);
-    padding: 5px;
     padding-top: 3%;
 }
 
@@ -120,6 +171,22 @@
     font-size: 20px;
     text-align: justify;
 }
+
+@media (max-width: 700px) {
+        .orgpt{
+            width: 80%;
+        }
+
+        .orgpt h1{
+            font-size: 25px;
+            padding-top: 5%;
+        }
+
+        .orgpt p{
+            font-size: 15px;
+        }
+        
+    }
 
     
 /*--------- Contact form ---------*/
@@ -130,7 +197,7 @@
         background: rgb(7, 7, 26);
         margin-top: 3%;
         padding: 30px 40px;
-        border-radius: 20PX;
+        border-radius: 10PX;
         text-align: center;
         margin-bottom: 5%;
     }
@@ -139,7 +206,7 @@
         border: 2px solid white;
         margin: 10px 0px;
         padding: 6px 20px;
-        border-radius: 20px;
+        border-radius: 10px;
     }
     
     .cfop h1{
@@ -185,6 +252,23 @@
         background-color: orangered;
         transition: 2s;
     }
+
+    @media (max-width: 700px) {  
+        .cfop{
+            width: 75%;
+            border-radius: 10PX;
+        }
+        
+        .cfop h1{
+            font-size: 25px;
+        }
+        
+        .buttonop{
+            width: 40%;
+            padding: 12px 0px;
+            font-size: 15px;
+        }
+    }
     
     /*----------- contact ---------*/
     
@@ -207,6 +291,9 @@
         background: transparent;
         transition: 1s;
     }
+
+    @media (max-width: 700px) {        
+    }
     
 </style>
 
@@ -219,9 +306,9 @@
                     <ul id="menu">
                         <li ><a href="HOME.html">HOME</a></li>
                         <li ><a href="ABOUTUS.html">ABOUT US</a></li>
-                        <li ><a href="PROGRAMMES.html">OUR PROGRAMMES</a></li>
+                        <li ><a href="PROGRAMMES.html">PROGRAMMES</a></li>
                         <li ><a href="BOOKS.html">BOOKS & GAMES</a></li>
-                        <li ><a href="PARTNERSHIP.html">PARTNER WITH US</a></li>
+                        <li ><a href="PARTNERSHIP.html">PARTNERSHIP</a></li>
                         <li ><a href="BLOG.html">BLOG</a></li>
                         <li ><a href="donor-&-sponsor.html">SUPPORT US</a></li>
                     </ul>
@@ -256,9 +343,10 @@
 
 <!--------- Quote section ----------->
 <section class="orgptna"><hr>
-    <h1>If I have seen further, it is by standing<br>
+    <h1>If I have seen further, it is by standing
          on the shoulders of giants.</h1>
-    <p>Please allow <b style="color: orangered;">SCHOOL WAY</b> to stand on your shoulders.</p><br><hr>
+    <p>Please allow <b style="color: orangered;">SCHOOL WAY</b> to stand 
+        on your shoulders.</p><br><hr>
 </section>
 
 
@@ -385,33 +473,6 @@
 
     <!---------- JavaScript ---------->
 <script>
-    var navbar = document.getElementById("navbar")
-   
-    window.onscroll = function(){
-        if(window.pageYOffset >= menu.offsetTop){
-            navbar.classList.add("sticky");
-        }
-    }
-
-
-
-// assume only one video is playing at a time
-var videoPlaying = null;
-
-const onPlay = function() {
-    if (videoPlaying && videoPlaying != this) {
-        videoPlaying.pause()
-    }
-    videoPlaying = this
-}
-
-// init event handler
-const videos = document.getElementsByClassName("video-bg")
-for (let i = 0; i < videos.length; i++) {
-    videos[i].addEventListener("play", onPlay)
-}
-
-
 </script>
 
 </body>

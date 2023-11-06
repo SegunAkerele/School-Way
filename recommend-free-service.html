@@ -24,6 +24,12 @@
             width: 60%;
         }
 
+        @media (max-width: 700px) { 
+            .headerrecomf h1{
+                font-size: 30px;
+            }           
+        }
+
 /*---------- content -----------*/
         .recfree{
             width: 60%;
@@ -46,6 +52,33 @@
         .recfree1 ul li{
             font-size: 20px;
             margin-left: 5%;
+        }
+
+        @media (max-width: 700px) {
+            .recfree{
+                width: 80%;
+                text-align: left;
+            }
+
+            .recfree1 h1{
+                font-size: 25px;
+                margin-top: 5%;
+                padding-bottom: 20px;
+            }
+
+            .recfree1 p{
+                font-size: 15px;
+                padding-bottom: 20px;
+            }
+            
+            .recfree1 ul li{
+                font-size: 15px;
+                margin-left: 10%;
+            }
+            
+            .recfree1 h2{
+                font-size: 15px;
+            }
         }
 
 /*--------- Contact form ---------*/
@@ -128,6 +161,22 @@
             background-color: orangered;
         }
 
+        @media (max-width: 700px) {
+            .cfsvref{
+                width: 80%;
+                padding: 30px 30px;
+                border-radius: 10PX;
+            }
+
+            .cfsvref1{
+                border-radius: 10px;
+            }
+
+            .cfsvref h1{
+                font-size: 25px;
+            }            
+        }
+
         /*------------ btn ---------*/
         .ccs-btn{
             border: 2px solid rgb(2, 2, 66);
@@ -137,7 +186,7 @@
             cursor: pointer;
             color: orangered;
             font-size: 20px;
-            border-radius: 10px;
+            border-radius: 20px;
         }
 
         .ccs-btn:hover{
@@ -153,6 +202,13 @@
             margin-bottom: 5%;
         }
 
+        @media (max-width: 700px) {  
+            .ccs2{
+                flex-direction: column;
+                gap: 0px;
+                margin-left: 10%;
+            }          
+        }
 
     </style>
 </head>
@@ -166,9 +222,9 @@
                     <ul id="menu">
                         <li ><a href="HOME.html">HOME</a></li>
                         <li ><a href="ABOUTUS.html">ABOUT US</a></li>
-                        <li ><a href="PROGRAMMES.html">OUR PROGRAMMES</a></li>
+                        <li ><a href="PROGRAMMES.html">PROGRAMMES</a></li>
                         <li ><a href="BOOKS.html">BOOKS & GAMES</a></li>
-                        <li ><a href="PARTNERSHIP.html">PARTNER WITH US</a></li>
+                        <li ><a href="PARTNERSHIP.html">PARTNERSHIP</a></li>
                         <li ><a href="BLOG.html">BLOG</a></li>
                         <li ><a href="donor-&-sponsor.html">SUPPORT US</a></li>
                     </ul>
@@ -185,22 +241,21 @@
     <div class="recfree1">
         <h1>Thank you for being here. This is a thoughtful step leading to an impactful 
             outcome.</h1>
-        <p>Since this is a recommendation, there are few things you should about our services
+        <p>Since this is a recommendation, there are few things you know should about our services
             and few others we strongly encourage you do before communicating us. Therefore, 
             note the following:
             <ul>
-                <li>It is only available for schools in Nigeria</li>
+                <li>This free programme is only available for schools in Nigeria</li>
                 <li>Our waitlist determines the date of the programme</li>
                 <li>The school can only enjoy our free service once</li>
                 <li>Discuss with the school management team.</li>
                 <li>Ensure their readiness to have us in the school.</li>
             </ul>
         </p>
-        <p></p>
         <h2>If that is okay with you, complete the form below to tell us about this 
             recommendation to be scheduled on our waitlist, or you can consider 
             recommending our 
-            <a href="recommend-paid-service.html" style="color: orangered; font-size: 30px; 
+            <a href="recommend-paid-service.html" style="color: orangered; font-size: 25px; 
             text-decoration: none;">paid service</a> at an affordable price. 
         </h2>
     </div>
@@ -210,20 +265,23 @@
     <div class="cfsvref">
         <h1>Kindly Place Your Order</h1>
         <div class="cfsvref1">
-            <label>Full Name:</label>
-            <input type="text" name="" value="" placeholder="Enter Your Name">
+            <label>Full Name:
+                <input type="text" name="" value="" placeholder="Enter Your Name">
+            </label>
         </div>
         <div class="cfsvref1">
-            <label>Phone Number:</label>
-            <input type="number" name="" value="" placeholder="Enter Your Phone Contact">
+            <label>Phone Number:
+                <input type="number" name="" value="" placeholder="Enter Your Phone Contact">
+            </label>
         </div>
         <div class="cfsvref1">
-            <label>Email:</label>
-            <input type="email" name="" value="" placeholder="Enter Your Email">
+            <label>Email:
+                <input type="email" name="" value="" placeholder="Enter Your Email">
+            </label>
         </div>
         <div class="cfsvref1">
-            <label>Who are you to the School?</label>
-            <select>
+            <label>Who are you to the School?
+                <select>
                 <option>A Well Wisher</option>
                 <option>The Principal</option>
                 <option>The Proprietor/Proprietress</option>
@@ -232,31 +290,36 @@
                 <option>A Staff Member</option>
                 <option>A Student</option>
             </select>
+            </label>
         </div>
         <div class="cfsvref1">
-            <label>Name of the School:</label>
-            <input type="text" name="" value="" placeholder="Enter School Name:">
+            <label>Name of the School:
+                <input type="text" name="" value="" placeholder="Enter School Name:">
+            </label>
         </div>
         <div class="cfsvref1">
-            <label>The School Address:</label>
-            <input type="text" name="" value="" placeholder="Enter the School Location:">
+            <label>The School Address:
+                <input type="text" name="" value="" placeholder="Enter the School Location:">
+            </label>
         </div>
         <div class="cfsvref1">
-            <label>Who Should We Contact in the School?</label>
-            <select>
+            <label>Who Should We Contact in the School?
+                <select>
                 <option>The Principal</option>
                 <option>The Proprietor/Proprietress</option>
                 <option>The Vice Principal.</option>
                 <option>A Staff Member</option>
             </select>
+            </label>
         </div>
         <div class="cfsvref1">
-            <label>Phone Number:</label>
-            <input type="number" name="" value="" placeholder="Enter the Person's Phone Contact">
+            <label>Phone Number:
+                <input type="number" name="" value="" placeholder="Enter the Person's Phone Contact">
+            </label>
         </div>
         <div class="cfsvref1">
-            <label>The Students' Class level:</label>
-            <select>
+            <label>The Students' Class level:
+                <select>
                 <option>JSS 1</option>
                 <option>JSS 2</option>
                 <option>JSS 3</option>
@@ -266,38 +329,44 @@
                 <option>SS 3</option>
                 <option>All Senior Students</option>
             </select>
+            </label>
         </div>
         <div class="cfsvref1">
-            <label>Select a Programme:</label>
-            <select>
-                <option>How to Learn Orientation Programme</option>
+            <label>Select a Programme:
+                <select>
+                <option>How to Learn Orientation</option>
                 <option>Mindset Detoxifying Orientation Programme (SENIOR STUDENTS)</option>
                 <option>Career and Education Orientation Programme</option>
                 <option>Exam Preparation and Success Orientation Programme</option>
                 <option>Soft Skills and Character Development Orientation Programme</option>
             </select>
+            </label>
         </div>
         <div class="cfsvref1">
-            <label>The Estimated Number of Students:</label>
-            <input type="number" name="" value="" placeholder="Enter the number of students:">
+            <label>The Estimated Number of Students:
+                <input type="number" name="" value="" placeholder="Enter the number of students:">
+            </label>
         </div>
         <div class="cfsvref1">
-            <label>Any Identified Challenge Among the Student?</label>
-            <select>
+            <label>Any Identified Challenge Among the Student?
+                <select>
                 <option>Yes</option>
                 <option>No</option>
             </select>
+            </label>
         </div>
         <div class="cfsvref1">
-            <label>If yes, briefly Tell us about it:</label>
-            <textarea></textarea>
+            <label>If yes, briefly Tell us about it:
+                <textarea></textarea>
+            </label>
         </div>
-        <div class="cfsvrpd1">
-            <label>Does the school know your are doing this?</label>
-            <select>
+        <div class="cfsvref1">
+            <label>Does the school know your are doing this?
+                <select>
                 <option>Yes</option>
                 <option>No</option>
             </select>
+            </label>
         </div>
         <a href="mailto:" class="buttonsv">SEND</a>
     </div>
@@ -385,33 +454,6 @@
 
     <!---------- JavaScript ---------->
 <script>
-    var navbar = document.getElementById("navbar")
-   
-    window.onscroll = function(){
-        if(window.pageYOffset >= menu.offsetTop){
-            navbar.classList.add("sticky");
-        }
-    }
-
-
-
-// assume only one video is playing at a time
-var videoPlaying = null;
-
-const onPlay = function() {
-    if (videoPlaying && videoPlaying != this) {
-        videoPlaying.pause()
-    }
-    videoPlaying = this
-}
-
-// init event handler
-const videos = document.getElementsByClassName("video-bg")
-for (let i = 0; i < videos.length; i++) {
-    videos[i].addEventListener("play", onPlay)
-}
-
-
 </script>
 
 </body>

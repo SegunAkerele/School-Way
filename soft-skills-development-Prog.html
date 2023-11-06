@@ -25,6 +25,7 @@
             width: 80%;
             margin: auto;
             margin-top: 5%;
+            margin-bottom: 10%;
         }
 
         .ssc{
@@ -32,14 +33,24 @@
         }
 
         .ssc1{
-            padding: 40px;
+            width: 50%;
+            padding: 30px;
         }
 
         .ssc1 p{
             font-size: 20px;
+            padding: 10px 0;
             text-align: justify;
         }
 
+        .ssc1 h1{
+            font-size: 30px;
+            color: rgb(2, 2, 66);
+        }
+
+        .ssc1:nth-child(2){
+            margin-top: 10%;
+        }
         
         .ssc2{
             display: flex;
@@ -62,6 +73,39 @@
             color: orangered;
             transition: 1s;
         }
+
+        @media (max-width: 700px) {
+            .headersoft h1{
+                font-size: 30px;
+            }
+
+            .ssc{
+                flex-direction: column;
+            }
+
+            .ssc1{
+                width: 95%;
+                padding: 5px;
+            }
+
+            .ssc1 p{
+                font-size: 15px;
+            }
+
+            .ssc1 h1{
+                font-size: 20px;
+            }
+
+            .ssc2{
+                display: flex;
+                gap: 20px;
+            }
+
+            .ssc-btn{
+                font-size: 15px;
+            }
+    
+        }
     </style>
 
 </head>
@@ -75,9 +119,9 @@
                     <ul id="menu">
                         <li ><a href="HOME.html">HOME</a></li>
                         <li ><a href="ABOUTUS.html">ABOUT US</a></li>
-                        <li ><a href="PROGRAMMES.html">OUR PROGRAMMES</a></li>
+                        <li ><a href="PROGRAMMES.html">PROGRAMMES</a></li>
                         <li ><a href="BOOKS.html">BOOKS & GAMES</a></li>
-                        <li ><a href="PARTNERSHIP.html">PARTNER WITH US</a></li>
+                        <li ><a href="PARTNERSHIP.html">PARTNERSHIP</a></li>
                         <li ><a href="BLOG.html">BLOG</a></li>
                         <li ><a href="donor-&-sponsor.html">SUPPORT US</a></li>
                     </ul>
@@ -93,8 +137,37 @@
 <section class="sscd">
     <div class="ssc">
         <div class="ssc1">
-            <img src="Image/creative-725811_1280.jpg" width="600" height="400"><br><br><br>
-            <br><br><h1>ORDER THIS PROGRAMME</h1>
+            <p>It is no longer a news that a lack of transferable skills is responsible for most 
+                graduates’ unemployment. But as much as the public talks about these skills, 
+                one thing has continued to make it a problem: the question of "How students can start 
+                developing the skills early in school". The reason for such a question is that 
+                people don’t develop skills by teaching them.</p>
+                
+            <p>However, school structured to help students develop some of the skills, but 
+                not so in an understandable way for students to easily decipher. We must 
+                help them understand the how-question.</p><br>
+
+                <img src="Image/skill2.jpg" width="100%" height="auto">
+                
+            <p><br>Asking if students truly need these skills is like asking if vehicles need 
+                energy to move. They need them to thrive in the present and future society. 
+                Different organisations today charge thousands in dollors or millions in 
+                Naira to guide young people in developing these skills. People are paying 
+                that much, having learnt the hard way, to realise that their healthy personal 
+                and professional growth solely depends on the skills.</p>
+                
+            <p>Why should schools allow their students to graduate unskilled when they can 
+                develop some of these skills in school or on campus using available means?</p>
+
+            <p>To guide students on how to develop some of these skills within their schools 
+                is our focus through this orientation programme.
+            </p>
+
+                <br><a href="CONTACT.html" class="ssc-btn">Contact Us to Learn More</a><br><br>
+                <br><a href="HOME.html" class="ssc-btn">Home</a>
+        </div>
+        <div class="ssc1">
+            <h1>ORDER THIS PROGRAMME</h1>
             <div class="ssc2">
                 <div class="ssc3">
                     <br><a href="paid-service.html" class="ssc-btn">PAID SERVICE</a><br><br>
@@ -103,32 +176,11 @@
                     <br><a href="free-service.html" class="ssc-btn">FREE SERVICE</a><br><br>
                 </div>
             </div><br>
-            <br><br><h2>OUR OTHER ORIENTATION PROGRAMMES</h2><br>            
+            <br><br><h1>OUR OTHER ORIENTATION PROGRAMMES</h1><br>            
             <br><a href="mind-detoxifying-Prog.html" class="ssc-btn">Mindset Detoxifying Orientation</a><br><br>
             <br><a href="how-to-learn-Prog.html" class="ssc-btn">How-to-Learn Orientation</a><br><br>
             <br><a href="career-choice-&-success-Prog.html" class="ssc-btn">Career and Education Orientation</a><br><br>
             <br><a href="exam-prep-&-success-Prog.html" class="ssc-btn">Exam Preparation &amp; Success Orientation</a>
-        </div>
-        <div class="ssc1">
-            <p>It is no longer news that a lack of transferable skills is responsible for most 
-                graduates’ unemployment. But as much as the public talks about these skills, 
-                one thing has continued to make it a problem: how students can start 
-                developing them early in school. The reason for such a question is that, as 
-                we all know, people don’t develop skills by teaching them. However, school 
-                is structured to help students develop some of these skills. Meanwhile, this is 
-                not so understandable in a way that students can easily decipher. We must 
-                help them understand the how question.</p><br>
-                
-            <p>We can’t start asking if students truly need these skills: they need them to 
-                thrive in the present and coming century’s society. Different kinds of 
-                organisations charge thousands and millions of Naira to guide young people 
-                who lack the skills to develop them. People are paying that much, having 
-                learnt the hard way, to realise that their healthy personal and professional 
-                growth solely depends on it. Why should schools allow their students to 
-                graduate unskilled when they can develop some skills while in school or 
-                on campus using available means?</p><br>
-                <br><a href="CONTACT.html" class="ssc-btn">Contact Us to Learn More</a><br><br>
-                <br><a href="HOME.html" class="ssc-btn">Home</a>
         </div>        
     </div>
 </section>
@@ -201,33 +253,6 @@
 
     <!---------- JavaScript ---------->
 <script>
-    var navbar = document.getElementById("navbar")
-   
-    window.onscroll = function(){
-        if(window.pageYOffset >= menu.offsetTop){
-            navbar.classList.add("sticky");
-        }
-    }
-
-
-
-// assume only one video is playing at a time
-var videoPlaying = null;
-
-const onPlay = function() {
-    if (videoPlaying && videoPlaying != this) {
-        videoPlaying.pause()
-    }
-    videoPlaying = this
-}
-
-// init event handler
-const videos = document.getElementsByClassName("video-bg")
-for (let i = 0; i < videos.length; i++) {
-    videos[i].addEventListener("play", onPlay)
-}
-
-
 </script>
 
 </body>

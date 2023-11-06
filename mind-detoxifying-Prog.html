@@ -21,6 +21,12 @@
             width: 60%;
         }
 
+        @media (max-width: 700px) {
+            .headermind h1{
+                font-size: 30px;
+            }            
+        }
+
         .mdop{
             width: 80%;
             margin: auto;
@@ -29,7 +35,17 @@
 
         .mdp{
             display: flex;
+            width: 100%;
         }
+
+        .mdp1:nth-child(1){
+            width: 45%;
+        }
+
+        .mdp1:nth-child(2){
+            width: 45%;
+        }
+
 
         .mdp1{
             padding: 40px;
@@ -38,6 +54,11 @@
         .mdp1 p{
             font-size: 20px;
             text-align: justify;
+        }
+
+        .mdp1 h1{
+            font-size: 25px;
+            color: rgb(4, 4, 39);
         }
 
         .mdp1 ul li{
@@ -49,6 +70,46 @@
         .mdp2{
             display: flex;
             gap: 50px;
+        }
+        
+        @media (max-width: 700px) {
+            .mdop{
+                width: 100%;
+                margin-top: 3%;
+            }
+
+            .mdp{
+                flex-direction: column-reverse;
+            }
+
+            .mdp1:nth-child(1){
+                width: 80%;
+            }
+
+            .mdp1:nth-child(2){
+                width: 80%;
+            }
+
+            .mdp1{
+                padding: 40px;
+            }
+
+            .mdp1 p{
+                font-size: 15px;
+            }
+
+            .mdp1 h1{
+            font-size: 20px;
+            }
+
+            .mdp1 ul li{
+                font-size: 15px;
+            }
+
+            .mdp2{
+            gap: 30px;
+            }
+
         }
 
         .mdp-btn{
@@ -67,6 +128,12 @@
             color: black;
             transition: 1s;
         }
+
+        @media (max-width: 700px) {
+            .mdp-btn{
+                font-size: 15px;
+            }
+        }
     </style>
 
 </head>
@@ -80,9 +147,9 @@
                     <ul id="menu">
                         <li ><a href="HOME.html">HOME</a></li>
                         <li ><a href="ABOUTUS.html">ABOUT US</a></li>
-                        <li ><a href="PROGRAMMES.html">OUR PROGRAMMES</a></li>
+                        <li ><a href="PROGRAMMES.html">PROGRAMMES</a></li>
                         <li ><a href="BOOKS.html">BOOKS & GAMES</a></li>
-                        <li ><a href="PARTNERSHIP.html">PARTNER WITH US</a></li>
+                        <li ><a href="PARTNERSHIP.html">PARTNERSHIP</a></li>
                         <li ><a href="BLOG.html">BLOG</a></li>
                         <li ><a href="donor-&-sponsor.html">SUPPORT US</a></li>
                     </ul>
@@ -99,7 +166,7 @@
 <section class="mdop">
     <div class="mdp">
         <div class="mdp1">
-            <img src="Image/science-1182713_1280.webp" width="600" height="400"><br><br><br>
+            <img src="Image/science-1182713_1280.webp" width="100%" height="auto"><br><br><br>
             <br><br><h1>ORDER THIS PROGRAMME</h1>
             <div class="mdp2">
                 <div class="mdp3">
@@ -109,21 +176,23 @@
                     <br><a href="free-service.html" class="mdp-btn">FREE SERVICE</a><br><br>
                 </div>
             </div><br>
-            <br><br><h2>OUR OTHER ORIENTATION PROGRAMMES</h2><br>            
+            <br><br><h1>OUR OTHER ORIENTATION PROGRAMMES</h1><br>            
             <br><a href="career-choice-&-success-Prog.html" class="mdp-btn">Career &amp; Education Orientation</a><br><br>
             <br><a href="how-to-learn-Prog.html" class="mdp-btn">How-to-Learn Orientation Programme</a><br><br>
             <br><a href="exam-prep-&-success-Prog.html" class="mdp-btn">Exam Preparation &amp; Success Orientation</a><br><br>
-            <br><a href="soft-skills-development-Prog.html" class="mdp-btn">Soft Skills &amp; Character Development Orientation</a>
+            <br><a href="soft-skills-development-Prog.html" class="mdp-btn">Soft Skills &amp; Character Development</a>
         </div>
         <div class="mdp1">
                 <p>School is not a scam. Education is not a scam.</p><br>
             
-                <p>Whatever happened that popularises the saying <q>School nah scam<q>; or 
-                    <q>Education nah scam<q> among young people today, which necessitates the 
+                <p>Whatever happened that popularises the saying <q>School nah scam</q>; or 
+                    <q>Education nah scam</q> among young people today, which necessitates the 
                     above declaration, must be an exciting event. However, the saying <q>school 
-                    nah scam<q> has become an ideology that is sending many schoolers away 
+                    nah scam</q> has become an ideology that is sending many schoolers away 
                     from school, and the students in the school who believe in the ideology are not 
                     serious with their studies which necessitates this programme.</p><br>
+
+                    <img src="Image/mind-detoxify.jpg" width="100%" height="auto"><br><br>
                     
                 <p>This is an orientation programme to address 
                     controversial and misleading ideologies, thoughts, beliefs and ideas that disvalue 
@@ -228,33 +297,6 @@
 
     <!---------- JavaScript ---------->
 <script>
-    var navbar = document.getElementById("navbar")
-   
-    window.onscroll = function(){
-        if(window.pageYOffset >= menu.offsetTop){
-            navbar.classList.add("sticky");
-        }
-    }
-
-
-
-// assume only one video is playing at a time
-var videoPlaying = null;
-
-const onPlay = function() {
-    if (videoPlaying && videoPlaying != this) {
-        videoPlaying.pause()
-    }
-    videoPlaying = this
-}
-
-// init event handler
-const videos = document.getElementsByClassName("video-bg")
-for (let i = 0; i < videos.length; i++) {
-    videos[i].addEventListener("play", onPlay)
-}
-
-
 </script>
 
 </body>
